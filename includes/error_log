@@ -1,0 +1,1 @@
+[15-Sep-2020 12:55:49 America/Chicago] PHP Warning:  mysqli::mysqli(): (08004/1040): Too many connections in /home2/jhalaby/bidzwon.com/dev/includes/connect.php on line 11

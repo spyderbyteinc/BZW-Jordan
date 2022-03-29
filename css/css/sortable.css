@@ -1,0 +1,52 @@
+/* Move It 1 */
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+#sortable li {
+  margin: 0 3px 3px 3px;
+  padding: 0.4em;
+  padding-left: 1.5em;
+  font-size: 1.4em;
+}
+#sortable li span {
+  position: absolute;
+  margin-left: -1.3em;
+}
+#sortable h2 {
+  font-size: 20px;
+  margin: 0;
+}
+#sortable li img {
+  width: 100%;
+}
+
+/* Move It 2 */
+#switch_area {
+  width: 100%;
+  margin: auto;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  text-align: center;
+  padding: 25px;
+  overflow: auto;
+}
+.switch_item {
+  width: 29%;
+  margin-right: 40px;
+  margin-bottom: 25px;
+  border: 1px solid grey;
+}
+.switch_item:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+.switch_item img {
+  width: 100%;
+  height: 150px;
+  background: whitesmoke;
+}

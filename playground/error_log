@@ -1,0 +1,5 @@
+[02-Mar-2021 13:52:15 America/Chicago] PHP Warning:  include(includes/connect.php): failed to open stream: No such file or directory in /home2/jhalaby/bidzwon.com/dev/playground/category_tree.php on line 3
+[02-Mar-2021 13:52:15 America/Chicago] PHP Warning:  include(includes/connect.php): failed to open stream: No such file or directory in /home2/jhalaby/bidzwon.com/dev/playground/category_tree.php on line 3
+[02-Mar-2021 13:52:15 America/Chicago] PHP Warning:  include(): Failed opening 'includes/connect.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home2/jhalaby/bidzwon.com/dev/playground/category_tree.php on line 3
+[02-Mar-2021 13:52:15 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/jhalaby/bidzwon.com/dev/playground/category_tree.php on line 6
+[02-Mar-2021 13:52:15 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home2/jhalaby/bidzwon.com/dev/playground/category_tree.php on line 7

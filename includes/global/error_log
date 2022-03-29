@@ -1,0 +1,37 @@
+[22-Mar-2022 14:57:33 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 10
+[22-Mar-2022 16:14:03 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 9
+[22-Mar-2022 16:14:03 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTimeZone::__construct(): Unknown or bad timezone ()' in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php:24
+Stack trace:
+#0 /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php(24): DateTimeZone->__construct('')
+#1 {main}
+  thrown in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 24
+[22-Mar-2022 16:16:06 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 9
+[22-Mar-2022 16:16:06 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTimeZone::__construct(): Unknown or bad timezone ()' in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php:23
+Stack trace:
+#0 /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php(23): DateTimeZone->__construct('')
+#1 {main}
+  thrown in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 23
+[22-Mar-2022 16:18:31 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 9
+[22-Mar-2022 16:18:31 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTimeZone::__construct(): Unknown or bad timezone ()' in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php:23
+Stack trace:
+#0 /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php(23): DateTimeZone->__construct('')
+#1 {main}
+  thrown in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 23
+[22-Mar-2022 16:18:32 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 9
+[22-Mar-2022 16:18:32 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTimeZone::__construct(): Unknown or bad timezone ()' in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php:23
+Stack trace:
+#0 /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php(23): DateTimeZone->__construct('')
+#1 {main}
+  thrown in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 23
+[22-Mar-2022 16:19:46 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 9
+[22-Mar-2022 16:19:46 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTimeZone::__construct(): Unknown or bad timezone ()' in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php:23
+Stack trace:
+#0 /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php(23): DateTimeZone->__construct('')
+#1 {main}
+  thrown in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 23
+[22-Mar-2022 16:19:47 America/Chicago] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 9
+[22-Mar-2022 16:19:47 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTimeZone::__construct(): Unknown or bad timezone ()' in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php:23
+Stack trace:
+#0 /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php(23): DateTimeZone->__construct('')
+#1 {main}
+  thrown in /home2/jhalaby/bidzwon.com/dev/includes/global/get_lot_countdown.php on line 23

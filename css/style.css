@@ -1,0 +1,6015 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dilute{
+  opacity: .5;
+}
+.mtb-20 {
+  margin: 20px 0px !important;
+}
+.no_margin {
+  margin: 0 !important;
+}
+.float_left {
+  float: left;
+}
+.align_center {
+  text-align: center;
+}
+fieldset {
+  border: 0;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+.disp_none {
+  display: none;
+}
+.width-75-pct {
+  width: 75%;
+}
+.mar_top25 {
+  margin-top: 25px !important;
+}
+hr.orange {
+  border-top: 2px solid chocolate;
+}
+hr.black {
+  border-top: 2px solid black;
+}
+.color-red {
+  color: red;
+}
+.mauto {
+  margin: auto;
+}
+.mauto span {
+  margin: auto;
+}
+.col1 {
+  width: 100%;
+}
+.col4 {
+  width: 27%;
+}
+.col5 {
+  width: 50px;
+}
+.col6 {
+  width: 40%;
+}
+.visibility_hidden {
+  visibility: hidden;
+}
+textarea {
+  line-height: normal !important;
+  min-height: 200px !important;
+  padding: 15px !important;
+}
+span.required {
+  color: red;
+  font-size: 20px;
+}
+.small {
+  font-size: 16px !important;
+}
+.deselect {
+  user-select: none;
+}
+.display_none {
+  display: none !important;
+}
+.color_chocolate {
+  color: chocolate !important;
+}
+.color_black {
+  color: black;
+}
+.color_red {
+  color: red;
+}
+.color_green {
+  color: green;
+}
+.black_border {
+  border: 2px solid black;
+}
+.bold {
+  font-weight: bold;
+}
+.font20 {
+  font-size: 20px !important;
+}
+.font15 {
+  font-size: 15px !important;
+}
+.font25 {
+  font-size: 25px !important;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+.no_bottom_border {
+  border-bottom: 0px !important;
+}
+.border_chocolate {
+  border-color: chocolate !important;
+}
+.border_black {
+  border-color: black;
+}
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+  justify-content: center !important;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.font-15 {
+  font-size: 15px;
+}
+.height_42 {
+  height: 42px;
+}
+.no_margin_top {
+  margin-top: 0px !important;
+}
+p.disclaimer_center_par {
+  color: black;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  width: 75%;
+}
+p.disclaimer_center_par a {
+  color: chocolate;
+}
+.width_100 {
+  width: 100% !important;
+}
+.width_550 {
+  width: 550px !important;
+}
+/* Modals */
+.modal_bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+}
+.modal {
+  position: absolute;
+  z-index: 100000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  min-height: 400px;
+  padding: 25px;
+  border-radius: 6px;
+}
+#login_modal #login_modal_content {
+  width: 450px;
+}
+.modal h4 {
+  font-size: 30px;
+  color: chocolate;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+#login_modal_content .full_col {
+  width: 100%;
+  margin-top: 25px;
+}
+
+#login_modal_content .full_col .input_label {
+  font-size: 20px;
+}
+#login_modal_content .login_row {
+  margin-bottom: 0 !important;
+  width: 90% !important;
+}
+#login_modal_content .login_options {
+  display: flex;
+  justify-content: space-between;
+}
+
+#login_modal_content .login_row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#logo_preview {
+  width: 200px;
+}
+/* Check Box */
+.checkbox-center {
+  margin: auto;
+}
+.font_reset {
+  font-size: 16px;
+}
+/* Buttons */
+#middle_header #middle_content .header_buttons {
+  margin: 0 !important;
+}
+.bg-gradient1 span,
+.bg-gradient1:before {
+  background: chocolate;
+}
+.fancy-button {
+  display: inline-block;
+  margin: 30px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+}
+.fancy-button:before {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  position: absolute;
+  bottom: -5px;
+  left: 30px;
+  right: 30px;
+  z-index: -1;
+  border-radius: 30em;
+  -webkit-filter: blur(20px) brightness(0.95);
+  filter: blur(20px) brightness(0.95);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-out;
+}
+.fancy-button i {
+  margin-top: -1px;
+  margin-right: 20px;
+  font-size: 1.265em;
+  vertical-align: middle;
+}
+.fancy-button span {
+  display: inline-block;
+  padding: 18px 60px;
+  border-radius: 50em;
+  position: relative;
+  z-index: 2;
+  will-change: transform, filter;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-out;
+}
+.fancy-button:focus,
+.fancy-button:active {
+  color: #ffffff;
+}
+.fancy-button:hover {
+  color: #ffffff;
+}
+.fancy-button:hover span {
+  -webkit-filter: brightness(1.05) contrast(1.05);
+  filter: brightness(1.05) contrast(1.05);
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+.fancy-button:hover:before {
+  bottom: 0;
+  -webkit-filter: blur(10px) brightness(0.95);
+  filter: blur(10px) brightness(0.95);
+}
+.fancy-button.pop-onhover:before {
+  opacity: 0;
+  bottom: 10px;
+}
+.fancy-button.pop-onhover:hover:before {
+  bottom: -7px;
+  opacity: 1;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+.fancy-button.pop-onhover:hover span {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.fancy-button.pop-onhover:hover:active span {
+  -webkit-filter: brightness(1) contrast(1);
+  filter: brightness(1) contrast(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.15s ease-out;
+}
+.fancy-button.pop-onhover:hover:active:before {
+  bottom: 0;
+  -webkit-filter: blur(10px) brightness(0.95);
+  filter: blur(10px) brightness(0.95);
+  transition: all 0.2s ease-out;
+}
+
+button.fancy-submit {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+button.fancy-submit span {
+  cursor: pointer;
+}
+
+.grey_btn {
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  background-image: none;
+  border-color: #6c757d;
+  background-color: #6c757d;
+}
+
+.grey_btn:hover {
+  color: #fff;
+  background-color: #666;
+  background-image: url(https://www.transparenttextures.com/patterns/60-lines.png);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid black;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: all 0.75s;
+}
+.buttons .save_button {
+  color: white;
+  background-color: #28a745;
+  background-image: none;
+  border-color: #28a745;
+  transition: all 0.5s;
+}
+.buttons .save_button:hover {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.buttons .cancel_button {
+  color: black;
+  background-color: #ffc107;
+  background-image: none;
+  border-color: #ffc107;
+  transition: all 0.5s;
+}
+.buttons .cancel_button:hover {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+.buttons .btn_navigation {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.buttons .btn_navigation:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+/* Header Styling */
+h1.logo img {
+  height: 75px;
+  display: flex;
+}
+header#header {
+  width: 100%;
+}
+#top_header {
+  width: 100%;
+  height: 40px;
+  background-color: #666;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  z-index: 1000;
+}
+#top_content {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+#top_header li.top_option {
+  display: inline-block;
+}
+#middle_header {
+  width: 100%;
+  height: 100px;
+  background-color: chocolate;
+}
+#middle_content {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+ul#top_information li.top_option {
+  display: inline-block;
+  font-size: 20px;
+}
+#top_content ul#top_information li {
+  margin-right: 30px;
+}
+#top_content ul#other_information li {
+  margin-left: 30px;
+}
+.account_information ul li {
+  margin-left: 30px;
+}
+#bottom_header {
+  width: 100%;
+  height: 45px;
+  background-color: #bdc3c7;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+}
+.account_information {
+  width: 235px;
+  text-align: right;
+}
+
+/* Sidebar Styling */
+#sidebar_items {
+  width: 45px;
+  position: fixed;
+  left: 0;
+  top: 300px;
+}
+#sidebar_items h4 {
+  border: 1px solid #7f7f7f;
+  border-top: none;
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+  overflow: hidden;
+  background: linear-gradient(orange, chocolate);
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 200px;
+  left: -68px;
+  text-align: center;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  z-index: 9999999;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+#sidebar_items h4.messages {
+  top: 300px;
+}
+#sidebar_items h4:hover {
+  background: linear-gradient(chocolate, orange);
+}
+#sidebar_items h4 a {
+  color: white;
+}
+#sidebar_items h4.bid_placement {
+  top: 500px;
+}
+/* Footer Styling */
+footer#footer {
+  margin-top: 30px;
+  min-height: 150px;
+  background-color: #666;
+  color: white;
+  border-top: 2px solid black;
+  box-shadow: 0px -5px 10px 0px #666;
+}
+
+/* Navigation Bar */
+ul#navigation {
+  list-style: none;
+  width: 1200px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul#navigation li.nav_item {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+ul#navigation li.nav_item:hover {
+  background-color: lightgrey;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  color: chocolate;
+}
+
+#nav_buying:hover #buying_dropdown_content {
+  display: block;
+}
+/* Search Bar */
+#search_field {
+  position: relative;
+}
+.search {
+  flex: 0 0 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.search__input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  color: rgb(119, 119, 119);
+  background-color: rgb(244, 242, 242);
+  border: none;
+  padding: 0.7rem 2rem;
+  width: 500px;
+  height: 46px;
+  margin-right: -3.25rem;
+  border-radius: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+.search__button {
+  border: none;
+  background-color: rgb(244, 242, 242);
+}
+
+.search__button:focus {
+  outline: none;
+}
+.search__icon {
+  height: 2rem;
+  width: 2rem;
+  fill: rgb(153, 153, 153);
+}
+#search_drop {
+  position: absolute;
+  width: 500px;
+  max-height: 275px;
+  bottom: -275px;
+  left: 0;
+  background-color: white;
+  color: rgb(119, 119, 119);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: auto;
+  display: none;
+}
+#search_header {
+  padding: 10px;
+  background-color: rgb(244, 242, 242);
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+}
+#recent_searches {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+p.recent {
+  text-transform: uppercase;
+}
+
+/* Home Page */
+section.homepage_section {
+  width: 1200px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+h2.section_heading {
+  width: 100%;
+  text-align: center;
+  border-bottom: 3px solid #666;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section.homepage_section h2 span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+#auctioneer_scroll_area {
+  width: 100%;
+  height: 60px;
+}
+ul#scroller li {
+  margin-right: 30px;
+}
+ul#scroller {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  animation: 15.6698s linear 0s infinite normal none running infiniteslide156806507420161e;
+}
+
+section.homepage_section {
+  padding-top: 10px;
+}
+
+ul#auction_categories {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+ul#auction_categories li {
+  color: #666;
+}
+ul#auction_categories li a {
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+ul#auction_categories li a.auc_cat:hover {
+  color: chocolate;
+}
+.home_area {
+  height: 250px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #666;
+}
+#watched_items_area {
+  display: flex;
+  justify-content: space-between;
+}
+#watched_items_area .watching {
+  width: 45%;
+  height: 200px;
+  border: 1px solid #666;
+}
+/* Navbar */
+
+.nav {
+  width: 1200px;
+  margin: auto;
+}
+ul#nav_links {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  height: 45px;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 2000;
+}
+ul.submenu {
+  display: none;
+}
+
+.nav li.nav_item {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+  text-align: left;
+}
+.nav ul.submenu li {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.75em;
+  text-align: left;
+}
+li.nav_item {
+  width: 14.285714%;
+}
+li.nav_item:hover a {
+  color: chocolate;
+}
+li.nav_item:hover ul.submenu a {
+  color: black;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: 0.3s all;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_item:hover ul.submenu {
+  display: block;
+}
+
+ul.submenu {
+  position: relative;
+  background-color: whitesmoke;
+  z-index: 9999999999999;
+  text-align: left;
+  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+ul.submenu li {
+  font-size: 1.2em;
+  text-align: left;
+  border-bottom: 1px solid lightgrey;
+}
+
+ul.submenu li a {
+  text-align: left;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.nav_item:hover {
+  background-color: lightgrey;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+}
+
+ul.submenu li:hover {
+  background-color: lightgrey !important;
+}
+
+ul.submenu li a:hover {
+  background-color: lightgrey;
+}
+#login_button {
+  font-size: 16px;
+  margin: auto;
+}
+#cancel_login {
+  margin: auto;
+}
+/****************************** Main Folder ****************************/
+
+/* Sign Up Page */
+section.sign_up_section h2 span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+h4.sign_heading {
+  width: 75%;
+  text-align: center;
+  border-bottom: 3px solid chocolate;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+section.sign_up_section h4 span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #666;
+}
+section.sign_up_section {
+  width: 1200px;
+  margin: auto;
+}
+.signup_row {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.signup_row .col2 {
+  width: 48%;
+  text-align: left;
+}
+.signup_row .col3 {
+  width: 30%;
+  text-align: left;
+}
+.signup_row .input_text {
+  line-height: 40px;
+  background: whitesmoke;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 0px 20px 0px 20px;
+  font-size: 1rem;
+  color: black;
+  outline: none;
+  margin: 0;
+  border: 1px solid chocolate;
+  width: 100%;
+}
+.signup_row .signup_group {
+  width: 100%;
+}
+.signup_row .input_label {
+  font-size: 1rem;
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+}
+.signup_row .input_select {
+  -webkit-appearance: menulist-button;
+  height: 42px;
+}
+#recaptcha {
+  margin: auto;
+  margin-top: 15px;
+}
+.company_details {
+  display: none;
+}
+/****************************** Catalog Folder ****************************/
+/* Create Catalog Page */
+
+section.catalog_section h2 span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+#create_catalog_container {
+  width: 1200px;
+  margin: auto;
+}
+
+/* Style the tab */
+#create_catalog .tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+  border-right: 0px;
+}
+
+/* Style the buttons that are used to open the tab content */
+#create_catalog .tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+#create_catalog .tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+#create_catalog .tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+#create_catalog .tabcontent {
+  float: left;
+  padding: 30px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  min-height: 300px;
+  border-left: 1px solid #ccc;
+  position: relative;
+}
+.tabcontent .navigation {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  margin-left: -30px;
+  padding: 0px 12px;
+  height: auto;
+}
+.tabcontent .navigation .buttons {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  margin-top: 10px;
+  padding-top: 15px;
+}
+.tabcontent .navigation .buttons button {
+  padding: 7px;
+  font-size: 16px;
+}
+.tabcontent .navigation p.disclaimer {
+  text-align: center;
+  margin-top: 15px;
+}
+.tabcontent section {
+  padding-bottom: 115px;
+}
+.create_catalog_heading {
+  text-align: center;
+  font-size: 30px;
+  color: chocolate;
+}
+.catalog_row {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.catalog_row .input_label {
+  font-size: 1.15rem;
+}
+#create_catalog {
+  width: 1200px;
+  margin: auto;
+}
+section.catalog_create h4.sign_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+section.catalog_create h4.sign_heading {
+  margin-top: 30px;
+}
+textarea#catalog_description {
+  resize: none;
+}
+.row_operations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 30px;
+  margin-top: 35px;
+}
+.row_operations .add {
+  margin-right: 15px;
+}
+.button_operations {
+  height: 75%;
+}
+.button_ops_left {
+  margin-right: 10px;
+}
+.lot_operations {
+  text-align: center;
+  margin-top: 20px;
+}
+.lot_operations button.add_lot {
+  padding: 7px;
+  font-size: 16px;
+}
+.lot_list {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.lot_list .lot_item {
+  height: 50px;
+  background-color: #ccc;
+  padding: 10px;
+  border-bottom: 2px solid #666;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lot_options .camera {
+  margin-right: 20px;
+}
+.lot_options .edit {
+  margin-right: 13px;
+}
+#addLotModal_background #addLotModal {
+  border-radius: 0px !important;
+  height: 80%;
+  width: 700px;
+  background: whitesmoke;
+  position: relative;
+  overflow: auto;
+}
+#addLotModal_background {
+  display: block;
+}
+#picture_modal_bg #picture_modal {
+  width: 700px;
+}
+#picture_modal_bg {
+  display: block;
+}
+.catalog_row .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.picture_upload_disclaimer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 30px;
+}
+.catalog_sort {
+  margin-top: 15px;
+}
+.sign_up_disclaimer {
+  text-align: center;
+}
+span.add {
+  cursor: pointer;
+}
+span.trash {
+  cursor: pointer;
+}
+/* Lot Details */
+.currency_label_lot {
+  height: 45px;
+}
+.current_info .bid_status h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.current_info .bid_status .winning_message,
+.current_info .bid_status .outbid_message {
+  display: none;
+}
+#lot_details_page {
+  width: 1200px;
+  margin: auto;
+}
+#lot_details_page h2 span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 20px;
+  color: chocolate;
+  padding: 5px;
+}
+#lot_details_page #current_lot_info {
+  display: flex;
+  justify-content: space-between;
+}
+#lot_details_page #current_lot_info .lot_details {
+  font-size: 25px;
+}
+#lot_details_page #lot_description {
+  text-align: justify;
+  margin-top: 20px;
+  font-size: 17px;
+}
+#lot_details_page #lot_description .lot_desc {
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#lot_details_page #bidding {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#lot_details_page #bidding .bid_left {
+  width: 47%;
+  padding: 10px;
+}
+#lot_details_page #bidding .bid_right {
+  width: 51%;
+  padding: 10px;
+  min-height: 500px;
+  background-color: #ccc;
+  border-radius: 10px;
+  border: 2px solid #aaa;
+}
+#lot_details_page #bidding .bid_right h2.bid_label {
+  font-size: 30px;
+  color: black;
+  margin-top: 15px;
+}
+#lot_details_page #bidding .bid_right .time_remaining {
+  font-size: 30px !important;
+  color: black !important;
+}
+#lot_details_page #bidding .input_text {
+  line-height: 40px;
+  background: whitesmoke;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 0px 20px 0px 20px;
+  font-size: 1rem;
+  color: black;
+  outline: none;
+  margin: 0;
+  border: 1px solid chocolate;
+  width: 100%;
+
+  border: 1px solid #666;
+  border-radius: 0;
+}
+.proxybid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.maxbid {
+  display: flex;
+  justify-content: space-between;
+}
+.bid_button {
+  background: chocolate;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0;
+  width: 45%;
+}
+#lot_details_page .lot_input {
+  width: 20%;
+}
+#lot_details_page .bid_type {
+  width: 35%;
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span.bid_type_max {
+  border-top: 1px solid white;
+}
+span.bid_type_proxy {
+  border-bottom: 1px solid white;
+}
+
+.bidding_buttons {
+  margin-top: 20px;
+  display: flex;
+  padding: 0 15px;
+}
+.bidding_buttons .bid_labels {
+  display: flex;
+  flex-direction: column;
+}
+.bidding_buttons .bid_labels span {
+  width: 117px;
+  height: 45px;
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bidding_buttons .bid_inputs {
+  display: flex;
+  flex-direction: column;
+  width: 355px;
+}
+.bidding_buttons .bid_inputs .lot_input {
+  height: 45px;
+}
+.bidding_buttons .bid_button {
+  width: 163px;
+}
+.bidding_buttons .bid_button .place_bid {
+  background-color: chocolate;
+  height: 45px;
+  width: 163px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0;
+  background: linear-gradient(orange, chocolate);
+  box-shadow: inset 0 0 0 1px black;
+  text-shadow: 0 2px 0 black;
+}
+.bidding_buttons .bid_button .place_bid:hover {
+  background: linear-gradient(chocolate, orange);
+}
+.bidding_buttons .bid_max_label {
+  border-top: 1px solid white;
+}
+.lot_navigation_left {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.lot_navigation_left a.lot_nav {
+  color: chocolate;
+  font-size: 17px;
+  transition: all 0.5s;
+}
+
+.lot_navigation_left a.lot_nav:hover {
+  color: black;
+}
+.bid_currency_labels span {
+  width: 75px !important;
+}
+.bid_currency {
+  width: 75px !important;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0;
+}
+.bid_currency_proxy {
+  border-bottom: 1px solid white;
+}
+.bid_currency_max {
+  border-top: 1px solid white;
+}
+.carousel_pictures .picture_table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.carousel_pictures .picture_table .picture_row {
+  display: table-row;
+  border-bottom: 10px solid transparent;
+}
+.carousel_pictures .picture_table .picture_row .picture_cell {
+  display: table-cell;
+  width: 30%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.carousel_pictures .picture_table .picture_row .picture_cell img {
+  width: 75%;
+  height: 75px;
+  border: 1px solid #666;
+  cursor: pointer;
+}
+.lot_navigation_left {
+  margin-bottom: 20px;
+}
+.carousel_pictures {
+  height: 312px;
+}
+.carousel-demo {
+  cursor: pointer;
+}
+.carousel-demo img {
+  border: 2px solid #666;
+}
+.carousel-demo .next,
+.carousel-demo .previous {
+  color: chocolate !important;
+  display: block !important;
+}
+#image_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+}
+#image_modal img.main_picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: calc(100% - 220px);
+  max-width: 1140px;
+}
+.next_icon {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  font-size: 100px;
+  color: #666;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.prev_icon {
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  font-size: 100px;
+  color: #666;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+.next_icon:hover,
+.prev_icon:hover {
+  color: white;
+}
+#image_modal .bottom_picture_list {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: rgba(210, 105, 30, 0.25);
+  border-top: 3px solid black;
+}
+#image_modal .bottom_picture_list .bottom_picture {
+  top: 50%;
+  z-index: 1000000;
+  width: 150px;
+  height: 80px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 3px solid black;
+  cursor: pointer;
+}
+#image_modal .bottom_picture_list .picture_icons {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#lot_category {
+}
+#lot_category ul#category_display {
+  text-align: center;
+  margin-top: 20px;
+}
+#lot_category ul#category_display li {
+  display: inline-block;
+  font-size: 22px;
+}
+#lot_category ul#category_display li.static_category_label {
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 20px;
+}
+.take_notes {
+  text-align: center;
+  font-size: 18px;
+}
+.take_notes .click {
+  color: chocolate;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.take_notes .click:hover {
+  color: black;
+}
+/* Note Taker on Lots */
+#note_modal {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100000;
+  display: none;
+}
+
+#note_modal #drag_me #cke_editor1 {
+  width: 590px;
+  margin: auto;
+  margin-top: 25px;
+}
+#note_modal #drag_me {
+  background-color: chocolate;
+  width: 600px;
+  padding-top: 15px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 6px 8px #888888;
+  border: 1px solid black;
+  cursor: move;
+}
+#note_modal #drag_me img {
+  height: 50px;
+}
+
+#note_modal #drag_me textarea {
+  width: 500px;
+  height: 500px;
+  margin-top: 250px;
+  margin-left: 250px;
+  visibility: hidden;
+}
+
+#note_modal #drag_me form .note_nav {
+  cursor: default;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#note_modal #drag_me a.bidzbutton {
+  font-size: 26px;
+}
+
+.bidzbutton {
+  text-decoration: none;
+  color: #666;
+  border-radius: 5px;
+  padding: 7px;
+}
+#note_modal h2 {
+  margin-bottom: 10px;
+}
+a.open_notes {
+  color: chocolate;
+  transition: all 0.5s;
+  font-weight: bold;
+}
+a.open_notes:hover {
+  color: black;
+}
+.bottom_picture_list img:hover,
+.bottom_picture_list img:focus,
+.bottom_picture_list img:active {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  /*transform: scale(1.1);*/
+}
+.currency_label {
+  height: 90px !important;
+}
+.lot_bidding_info_table {
+  display: table;
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+}
+.lot_bidding_info_table .lot_bidding_row {
+  display: table-row;
+}
+.lot_bidding_info_table .lot_bidding_row .lot_cell {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid black;
+  background: chocolate;
+  color: white;
+  font-weight: bold;
+  width: 56.2%;
+}
+.lot_participation_buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.number_watching {
+  font-size: 20px;
+  text-align: center;
+}
+.watch_button a {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.watch_button a svg {
+  margin-left: 12px;
+}
+.register_button a {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.register_button a svg {
+  margin-right: 12px;
+}
+.current_info {
+  padding: 15px;
+  width: 650px;
+}
+.current_info_table {
+  display: table;
+  border-collapse: collapse;
+  background: whitesmoke;
+  color: chocolate;
+  border: 6px inset #666;
+  border-bottom: 0px;
+  width: 620px;
+}
+.current_info_table .current_info_row {
+  display: table-row;
+}
+.current_info_table .current_info_row .current_info_cell {
+  display: table-cell;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.current_info_table .current_info_row .current_info_left {
+  width: 175px;
+  color: black;
+}
+.current_info_table .current_info_row .current_info_right {
+  width: 70%;
+  color: chocolate;
+  font-weight: bold;
+}
+.lot_info_table {
+  display: table;
+  border-collapse: collapse;
+  background: whitesmoke;
+  color: chocolate;
+  border: 6px inset #666;
+  border-top: 0px;
+  width: 100%;
+}
+.number_watching {
+  font-weight: bold;
+}
+.lot_info_table .lot_info_row {
+  display: table-row;
+}
+
+.lot_info_table .lot_info_row .lot_info_cell {
+  display: table-cell;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid black;
+  width: 100px;
+  text-align: center;
+}
+.lot_info_table .lot_info_row .large_cell {
+  width: 100px;
+}
+.lot_info_table .lot_info_row .second_cell {
+  width: 93px;
+  font-weight: bold;
+}
+.lot_info_table .lot_info_row .cell_caption {
+  color: black;
+}
+#lot_details_page #current_lot_info a.catalog_name {
+  color: chocolate;
+  transition: all 0.5s;
+}
+#lot_details_page #current_lot_info a.catalog_name:hover {
+  color: black;
+}
+
+#auctioneer_and_asset {
+  display: flex;
+  justify-content: space-between;
+}
+#auctioneer_and_asset #auctioneer_info {
+  width: 47%;
+  padding: 10px;
+}
+#contact_and_asset_location #asset_location {
+  width: 47%;
+  padding: 10px;
+}
+#auctioneer_and_asset h4.sign_heading {
+  width: 100%;
+}
+#auctioneer_and_asset h4.sign_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #666;
+  font-size: 20px;
+}
+
+#auctioneer_and_asset #auctioneer_info #auctioneer_name_and_logo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#auctioneer_and_asset #auctioneer_info #auctioneer_name_and_logo .company_phone {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+#auctioneer_and_asset #auctioneer_info #auctioneer_name_and_logo img.auctioneer_logo {
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border: 2px solid chocolate;
+}
+#auctioneer_and_asset #auctioneer_info #auctioneer_name_and_logo h4.auctioneer_name {
+  font-size: 30px;
+}
+#auctioneer_and_asset #auctioneer_info #auctioneer_name_and_logo a.auctioneer_website {
+  color: chocolate;
+  font-size: 23px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+#auctioneer_and_asset #auctioneer_info #auctioneer_name_and_logo a.auctioneer_website:hover {
+  color: black;
+}
+#auctioneer_and_asset #auctioneer_info #auctioneer_name_and_logo #affiliations {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  flex-direction: column;
+  font-size: 23px;
+}
+#auctioneer_and_asset #auctioneer_info #auctioneer_name_and_logo #affiliations .affiliation{
+  margin-bottom: 20px;
+}
+#auctioneer_and_asset #auctioneer_info #auctioneer_name_and_logo #affiliations img.aff {
+  height: 100px;
+}
+#auctioneer_and_asset #auctioneer_info #auctioneer_name_and_logo .affiliation_label span {
+  font-size: 30px;
+  border-bottom: 2px solid chocolate;
+  color: black;
+  font-weight: bold;
+}
+#asset_location #map_holder{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+#asset_location #map_holder #map_choser{
+  height: 42px;
+    line-height: 40px;
+    background: whitesmoke;
+    box-shadow: inset 0px 1px 3px 0px rgb(0 0 0 / 8%);
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+    font-size: 1rem;
+    color: black;
+    outline: none;
+    margin: 0;
+    border: 1px solid chocolate;
+    width: 100%;
+    margin-top: 25px;
+}
+#asset_location .address {
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+#asset_location .address div {
+  margin-bottom: 20px;
+}
+#asset_location #currency_and_timezone {
+  text-align: center;
+  font-size: 22px;
+}
+#asset_location #currency_and_timezone .currency {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#auctioneer_info #auctioneer_name_and_logo .affiliation_label {
+  margin-top: 25px;
+}
+#auction_information {
+  margin-top: 30px;
+}
+#auction_information ul#nav_tabs {
+  display: flex;
+  justify-content: space-between;
+}
+#auction_information ul#nav_tabs li {
+  width: 25%;
+  height: 50px;
+  background-color: lightgrey;
+  background-image: url(https://www.transparenttextures.com/patterns/60-lines.png);
+  transition: all 0.75s;
+  color: black;
+}
+#auction_information ul#nav_tabs li {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  border: 2px solid chocolate;
+  border-bottom: 1px solid chocolate;
+}
+#auction_information ul#nav_tabs li.active {
+  width: 25%;
+  height: 50px;
+  background-color: #aaa;
+  background-image: url(https://www.transparenttextures.com/patterns/60-lines.png);
+  color: black;
+}
+#auction_information ul#nav_tabs li.active:hover {
+  background-color: #aaa;
+  background-image: url(https://www.transparenttextures.com/patterns/60-lines.png);
+  color: black;
+}
+#auction_information ul#nav_tabs li:hover {
+  background-color: #aaa;
+  background-image: url(https://www.transparenttextures.com/patterns/60-lines.png);
+  color: black;
+}
+#auction_information ul#nav_tabs li a.nav_link {
+  height: 100%;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+}
+#auctioneer_and_asset #lot_details {
+  width: 47%;
+  padding: 10px;
+}
+#contact_and_asset_location {
+  display: flex;
+  justify-content: space-between;
+}
+#contact_and_asset_location #contact_information {
+  width: 47%;
+  padding: 10px;
+}
+
+#contact_and_asset_location h4.sign_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #666;
+  font-size: 20px;
+}
+
+#contact_and_asset_location h4.sign_heading {
+  width: 100%;
+}
+
+#inspection_and_removal {
+  display: flex;
+  justify-content: space-between;
+}
+#inspection_and_removal #inspection_times,
+#inspection_and_removal #removal_times {
+  width: 47%;
+  padding: 10px;
+}
+#inspection_and_removal h4.sign_heading {
+  width: 100%;
+}
+#inspection_and_removal h4.sign_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #666;
+  font-size: 20px;
+}
+
+
+#terms_and_conditions h4.sign_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #666;
+  font-size: 20px;
+}
+#terms_and_conditions {
+  text-align: justify;
+}
+
+#contact_and_asset_location,
+#inspection_and_removal,
+#terms_and_conditions {
+  display: none;
+}
+.auctioneer_phone {
+  margin-top: 25px;
+  font-size: 20px;
+}
+.address_module {
+  display: flex;
+  align-items: center;
+}
+.catalog_address_location {
+  width: 88%;
+}
+#address_location1_controls {
+  width: 10%;
+}
+.catalog_address_location {
+  margin-right: 20px;
+}
+#addLotModal h4.sign_heading {
+  margin-top: 30px;
+  padding-bottom: 0px;
+}
+#addLotModal h4.sign_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 20px;
+  color: #666;
+}
+#confirm_email {
+  width: 1200px;
+  margin: auto;
+}
+#confirm_email #confirm_container {
+  width: 750px;
+  margin: auto;
+}
+#confirm_email h2 span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 25px;
+  color: chocolate;
+  padding: 5px;
+}
+#confirm_email_notification {
+  height: 40px;
+  background: #ffc107;
+}
+#confirm_email_notification #email_notification_text {
+  width: 1200px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+#confirm_email_notification #email_notification_text p {
+  color: black;
+}
+#confirm_email_notification #email_notification_text p a {
+  color: red;
+  transition: all 0.25s;
+}
+
+#confirm_email_notification #email_notification_text p a:hover {
+  color: chocolate;
+}
+#confirm_email #confirm_container .confirm_greeting {
+  font-size: 30px;
+}
+
+#confirm_email #confirm_container p.confirm_body {
+  text-align: justify;
+  margin: 15px 0px;
+  text-indent: 50px;
+  font-size: 19px;
+}
+#confirm_email #confirm_container .confirm_token_label {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+#confirm_email #confirm_container input#confirm_token {
+  height: 40px;
+  width: 145px;
+  margin: auto;
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+#confirm_email #confirm_container input[type="number"]::-webkit-inner-spin-button,
+#confirm_email #confirm_container input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#confirm_email #confirm_container a.confirm_submit {
+  width: 145px;
+  margin: auto;
+  font-size: 25px !important;
+  color: white !important;
+}
+#confirm_email #confirm_container .confirm_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+#confirm_email #confirm_container p.resend_body {
+  font-size: 19px;
+  text-align: center;
+  margin-top: 25px;
+}
+#confirm_email #confirm_container a {
+  color: chocolate;
+  font-size: 19px;
+  transition: all 0.5s;
+}
+#confirm_email #confirm_container a:hover {
+  color: black;
+}
+.confirm_password_input {
+  height: 40px;
+  width: 275px;
+  margin: auto;
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+/* Browsing */
+#view_catalog {
+  width: 1200px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+#view_catalog h2.section_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+#browse_container {
+  display: flex;
+  justify-content: space-between;
+}
+#browse_container .browse_area {
+  padding: 15px;
+}
+#view_catalog #browse_filter {
+  width: 25%;
+  background: red;
+}
+#view_catalog #browse_list {
+  width: 85%;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+}
+#view_catalog #browse_list .sort_and_view {
+  width: 100%;
+  padding: 20px;
+  background-color: #ccc;
+  height: 70px;
+  margin-bottom: 20px;
+}
+#view_catalog #browse_list .browse_catalog_module {
+  width: 100%;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 5px;
+  border: 3px solid chocolate;
+  box-shadow: 5px 10px 18px #888888;
+}
+#view_catalog #browse_list .browse_catalog_module .more_details {
+  display: none;
+}
+#view_catalog #browse_list .browse_catalog_module .view_more {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 7px;
+}
+#view_catalog #browse_list .browse_catalog_module .view_more a {
+  color: chocolate;
+  transition: all 0.3s;
+}
+#view_catalog #browse_list .browse_catalog_module .view_more a:hover {
+  color: black;
+  text-decoration: underline;
+}
+#view_catalog #browse_list .browse_catalog_module .view_more a svg {
+  font-size: 35px;
+  margin-top: -15px;
+  margin-left: 5px;
+}
+#view_catalog #browse_list .browse_catalog_module .view_more a svg:first-child {
+  margin-right: 5px;
+}
+#view_catalog #browse_list .browse_catalog_module .cat_browse_mod {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#view_catalog #browse_list .browse_catalog_module .cat_browse_mod:not(:first-child) {
+  margin-top: 15px;
+}
+#view_catalog #browse_list .browse_catalog_module .auction_description .desc_row {
+  margin-bottom: 15px;
+}
+#view_catalog #browse_list .browse_catalog_module .auction_description .desc_row_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+#view_catalog #browse_list .browse_catalog_module .auction_description .desc_row_around {
+  display: flex;
+  justify-content: space-around;
+}
+#view_catalog #browse_list .browse_catalog_module .detail_head {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+#view_catalog #browse_list .browse_catalog_module .detail_head a {
+  margin: 0;
+  font-size: 14px;
+}
+#view_catalog #browse_list .browse_catalog_module .detail_head .det_right svg {
+  margin-left: 5px;
+}
+#view_catalog #browse_list .browse_catalog_module .detail_head .det_left svg {
+  margin-right: 5px;
+}
+#view_catalog #browse_list .browse_catalog_module .det_center {
+  border-bottom: 3px solid chocolate;
+  padding-bottom: 3px;
+}
+#view_catalog #browse_list .browse_catalog_module .inspect_dets .inspect_row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#view_catalog #browse_list .browse_catalog_module .removal_dets .removal_row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#view_catalog #browse_list .browse_catalog_module .pictures {
+  width: 100%;
+}
+#view_catalog #browse_list .browse_catalog_module .location .address_block {
+  display: flex;
+  justify-content: space-between;
+}
+#view_catalog #browse_list .browse_catalog_module .location .addresses {
+  width: 65%;
+  padding: 15px;
+  overflow: auto;
+}
+
+#view_catalog #browse_list .browse_catalog_module .location .addresses ul#address_list .address_label {
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 10px;
+  color: chocolate;
+  margin-left: 25px;
+}
+#view_catalog #browse_list .browse_catalog_module .location .addresses ul#address_list li.address {
+  margin-bottom: 15px;
+}
+#view_catalog #browse_list .browse_catalog_module .location .address_map {
+  width: 35%;
+  height: 250px;
+  display: flex;
+  align-self: center;
+}
+#view_catalog #browse_list .browse_catalog_module .location .address_map iframe {
+  width: 100%;
+  height: 250px;
+}
+.auction_main_info {
+  display: flex;
+  justify-content: space-between;
+}
+.auction_main_info .auction_info {
+  width: 60%;
+  border-right: 2px solid chocolate;
+  padding-right: 20px;
+}
+.auction_main_info .auction_info .catalog_description {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: justify;
+}
+.auction_main_info .auctioneer_info {
+  width: 36%;
+}
+section.browse_section {
+  width: 1200px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+section.browse_section .browse_list_and_filter {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+}
+section.browse_section .browse_list_and_filter .filter {
+  width: 25%;
+  background-color: lightgreen;
+}
+section.browse_section .browse_list_and_filter .browse_list {
+  width: 75%;
+}
+section.browse_section h2.section_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+section.browse_section .browse_list_and_filter .module {
+  padding: 25px;
+}
+section.browse_section .browse_list_and_filter .browse_list .browse_catalog_module {
+  background-color: #ccc;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border: 3px solid chocolate;
+}
+section.browse_section .browse_list_and_filter .browse_list .browse_catalog_module .auction_details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/*
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_image_cube {
+  width: 25%;
+  height: 185px;
+  background-color: cornflowerblue;
+}*/
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .image_cube_and_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .image_cube_and_buttons
+  .auction_image_cube {
+  width: 100%;
+  height: 185px;
+  background-color: lightsalmon;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .image_cube_and_buttons
+  .auction_buttons {
+  width: 100%;
+  height: 125px;
+  text-align: center;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .image_cube_and_buttons
+  .auction_buttons
+  a.button {
+  margin: 0;
+  font-size: 17px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+section.browse_section .browse_list_and_filter .browse_list .browse_catalog_module .auction_details .auction_name {
+  width: 71%;
+  padding: 15px;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_register_and_view {
+  width: 20%;
+  background-color: darkorange;
+}
+section.browse_section .browse_list_and_filter .browse_list .browse_catalog_module .auction_details .auction_name .bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  span.node {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  h3.location {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .auctioneer_dets {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .catalog_description {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .auctioneer_dets
+  .auctioneer_vend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .auctioneer_dets
+  .auctioneer_vend
+  .website {
+  margin-top: 10px;
+}
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .auctioneer_dets
+  .auctioneer_vend
+  a.message {
+  font-size: 17px;
+  margin-top: 15px;
+}
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .auctioneer_dets
+  .auctioneer_vend
+  a.message
+  svg {
+  font-size: 17px;
+  margin-right: 10px;
+}
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .auctioneer_dets
+  .auctioneer_logo {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .auctioneer_dets
+  .auctioneer_logo
+  img.logo {
+  height: 65px;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .auctioneer_dets
+  .auctioneer_logo
+  .affiliations {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .auctioneer_dets
+  .auctioneer_logo
+  .affiliations
+  img.aff {
+  width: 50px;
+  height: 50px;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .auction_name
+  .datetimes {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auction_main_info .auctioneer_info .seller_name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.auction_main_info .auctioneer_info .seller_logo {
+  text-align: center;
+}
+
+.auction_main_info .auctioneer_info .seller_logo img.logo {
+  width: 150px;
+  margin: auto;
+}
+
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .image_cube_and_buttons
+  .auction_buttons
+  .reg
+  svg {
+  margin-right: 1px;
+}
+section.browse_section
+  .browse_list_and_filter
+  .browse_list
+  .browse_catalog_module
+  .auction_details
+  .image_cube_and_buttons
+  .auction_buttons
+  .cat
+  svg {
+  margin-left: -18px;
+}
+
+.auction_main_info .auctioneer_info .seller_contact {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.auction_main_info .auctioneer_info .affiliations {
+  display: flex;
+  justify-content: space-around;
+}
+.auction_main_info .auctioneer_info .affiliations img.aff {
+  height: 50px;
+  width: 50px;
+}
+#view_catalog #lots_in_catalog {
+  width: 85%;
+  margin: auto;
+  padding: 15px;
+}
+#view_catalog #lots_in_catalog .lot_node {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+#view_catalog #lots_in_catalog .lot_node .lot_content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#view_catalog #lots_in_catalog .lot_node .lot_content .picture {
+  width: 25%;
+  height: 100%;
+  background-color: red;
+}
+
+#view_catalog #lots_in_catalog .lot_node .lot_content .name_and_description {
+  width: 40%;
+  height: 100%;
+  padding: 15px;
+}
+
+#view_catalog #lots_in_catalog .lot_node .lot_content .name_and_description .view_lot {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+#view_catalog #lots_in_catalog .lot_node .lot_content .name_and_description h3 {
+  margin-bottom: 10px;
+}
+#view_catalog #lots_in_catalog .lot_node .lot_content .name_and_description .lot_name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 23px;
+}
+#view_catalog #lots_in_catalog .lot_node .lot_content .name_and_description .lot_description {
+  text-align: justify;
+}
+#view_catalog #lots_in_catalog .lot_node .lot_content .bid_details {
+  width: 35%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#view_catalog #lots_in_catalog .lot_node .lot_content .bid_details .info {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#view_catalog #lots_in_catalog .lot_node .lot_content .bid_details .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+#view_catalog #lots_in_catalog .lot_node .lot_content .bid_details .buttons a {
+  margin: 0 !important;
+}
+
+/* Seller Application */
+section#seller_sign_up {
+  width: 1200px;
+  margin: auto;
+}
+section#seller_sign_up h2.page_heading {
+  width: 100%;
+  text-align: center;
+  border-bottom: 3px solid #666;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section#seller_sign_up h2.page_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+section#seller_sign_up h4.sign_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #666;
+}
+section#seller_sign_up .sign_up_container {
+  width: 65%;
+  margin: auto;
+}
+section#seller_sign_up .sign_up_container p.affiliations {
+  text-align: center;
+  font-size: 18px;
+}
+section#seller_sign_up .add_sub_account {
+  text-align: center;
+}
+section#seller_sign_up .add_sub_account a {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  align-items: center;
+}
+
+section#seller_sign_up .add_sub_account a svg {
+  float: left;
+  margin-right: 10px;
+}
+section#seller_sign_up .sign_up_container .sub_list .sub_item {
+  height: 50px;
+  background-color: #ccc;
+  padding: 10px;
+  border-bottom: 2px solid #666;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section#seller_sign_up .sign_up_container .sub_list .sub_item .person_info svg {
+  float: left;
+  margin-right: 12px;
+}
+
+section#seller_sign_up .sign_up_container .sub_list .sub_item .options {
+  display: flex;
+}
+section#seller_sign_up .sign_up_container .sub_list .sub_item .options .edit {
+  margin-right: 13px;
+}
+section#seller_sign_up .sign_up_submit_area {
+  text-align: center;
+}
+
+section#seller_sign_up .sign_up_container p.disclaim_application {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+section#seller_sign_up .sign_up_container .logo_disclaimer {
+  text-align: center;
+  font-size: 17px;
+}
+
+section#seller_sign_up .sign_up_container #company_logo {
+  display: block;
+  margin: auto;
+  width: 180px;
+}
+.add_button {
+  text-align: center;
+  margin-top: 15px;
+}
+.add_button a {
+  font-size: 15px;
+}
+/* Sign Up Modal */
+#sign_up_modal #sign_up_modal_content {
+  width: 700px;
+}
+#sign_up_modal #sign_up_modal_content a#cancel_sign_up {
+  margin: 0;
+  margin-top: 15px;
+}
+#sign_up_modal #sign_up_modal_content .signup_options {
+  width: 75%;
+  height: 100px;
+  margin-top: 20px;
+}
+#sign_up_modal #sign_up_modal_content .signup_options .option_item {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+#sign_up_modal #sign_up_modal_content .signup_options .option_item svg {
+  font-size: 40px;
+}
+#sign_up_modal #sign_up_modal_content .signup_options .option_item .option_link {
+  display: flex;
+  flex-direction: column;
+  height: 115px;
+  font-size: 25px;
+}
+#sign_up_modal #sign_up_modal_content .signup_options .option_item a {
+  color: black;
+  transition: all 0.3s;
+}
+#sign_up_modal #sign_up_modal_content .signup_options .option_item a.option_link:hover {
+  color: chocolate;
+}
+#sign_up_modal #sign_up_modal_content h5 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+#sign_up_modal #sign_up_modal_content p.sign_up_disclaimer {
+  font-size: 17px;
+  width: 75%;
+  margin: auto;
+  margin-top: 15px;
+}
+#sign_up_modal #sign_up_modal_content p.account_disclaimer {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Catalog Basic Modals */
+.catalog_modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+}
+.catalog_modal .modal_content {
+  position: absolute;
+  z-index: 100000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  padding: 25px;
+  border-radius: 6px;
+}
+.catalog_modal .modal_content h1 {
+  font-size: 30px;
+  color: chocolate;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+.edit_contact_modal {
+  display: none;
+}
+.edit_removal_modal {
+  display: none;
+}
+.edit_inspection_modal {
+  display: none;
+}
+.edit_location_modal {
+  display: none;
+}
+.add_contact_modal {
+  display: none;
+}
+.add_inspection_modal {
+  display: none;
+}
+.add_removal_modal {
+  display: none;
+}
+.add_location_modal {
+  display: none;
+}
+.catalog_modal .contact_modal {
+  width: 750px;
+}
+.catalog_modal .inspection_modal,
+.catalog_modal .removal_modal {
+  width: 800px;
+}
+.catalog_modal .catalog_row.operations {
+  text-align: center;
+}
+.catalog_modal .catalog_row.operations a {
+  font-size: 15px;
+  margin: 0;
+}
+
+.catalog_modal .catalog_row.operations a:first-child {
+  margin-right: 50px;
+}
+.contact_area ul#contact_list li.contact_item,
+.removal_area ul#removal_list li.removal_item,
+.inspect_area ul#inspection_list li.inspection_item,
+.address_area ul#location_list li.location_item {
+  height: 85px;
+  background-color: #ccc;
+  padding: 10px;
+  border-bottom: 2px solid #666;
+  font-size: 20px;
+  /* display: flex; */
+  align-items: center;
+  /* justify-content: space-between; */
+  padding-left: 25px;
+}
+
+.question_area ul#question_list li.question_item {
+  background-color: #ccc;
+  padding: 10px;
+  border-bottom: 2px solid #666;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding-left: 25px;
+}
+
+.address_area ul#location_list li.location_item {
+  font-size: 15px;
+}
+.contact_area ul#contact_list li.contact_item span.operations,
+.removal_area ul#removal_list li.removal_item span.operations,
+.inspect_area ul#inspection_list li.inspection_item span.operations,
+.address_area ul#location_list li.location_item span.operations,
+.question_area ul#question_list li.question_item span.operations {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact_area ul#contact_list li.contact_item span.name {
+  margin-right: 25px;
+}
+.removal_area ul#removal_list li.removal_item span.date,
+.removal_area ul#removal_list li.removal_item span.time,
+.inspect_area ul#inspection_list li.inspection_item span.date,
+.inspect_area ul#inspection_list li.inspection_item span.time {
+  margin-right: 15px;
+}
+
+.address_area ul#location_list li.location_item span.address,
+.address_area ul#location_list li.location_item span.city,
+.address_area ul#location_list li.location_item span.state {
+  margin-right: 15px;
+}
+
+li.contact_item strong,
+li.removal_item strong,
+li.inspection_item strong,
+li.question_item strong {
+  float: left;
+  margin-right: 10px;
+}
+li.contact_item span,
+li.removal_item span,
+li.inspection_item span,
+li.question_item span {
+  float: left;
+}
+li.contact_item span.location_alert,
+li.inspection_item span.location_alert,
+li.removal_item span.location_alert {
+  height: 100%;
+  display: none;
+  align-items: center;
+  margin-right: 25px;
+  color: red;
+  font-size: 25px;
+}
+li.contact_item span.information_content,
+li.inspection_item span.information_content,
+li.removal_item span.information_content {
+  margin-top: 10px;
+}
+li.contact_item span.operations,
+li.inspection_item span.operations,
+li.removal_item span.operations,
+li.question_item span.operations {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+li.location_item {
+  display: flex;
+  font-size: 17px !important;
+  height: auto !important;
+  padding: 20px !important;
+  justify-content: space-between;
+}
+/* Registration Page */
+section.registration_section {
+  width: 1200px;
+  margin: auto;
+}
+section.registration_section h2 span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+section.registration_section h4 span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 20px;
+  color: #666;
+}
+section.registration_section p.registration_disclaimer {
+  text-transform: capitalize;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+section.registration_section .account_type_radio {
+  font-size: 20px;
+  margin: auto;
+}
+
+section.registration_section .account_type_radio #buysell_type {
+  margin-left: 75px;
+}
+
+section.registration_section p.account_type_disclaimer {
+  margin-top: 15px;
+  width: 75%;
+}
+section.registration_section .account_type_radio #comp_no {
+  margin-left: 75px;
+}
+
+section.registration_section p.logo_disclaimer {
+  width: 75%;
+  margin-top: 25px;
+  font-size: 18px;
+}
+section.registration_section input#company_logo {
+  display: block;
+  margin: auto;
+  width: 180px;
+  margin-top: 15px;
+}
+section.registration_section #company_information,
+section.registration_section #seller_information {
+  display: none;
+}
+section.registration_section #finished_seller {
+  display: none;
+}
+section.registration_section #more_company_requirements,
+section.registration_section #more_type_requirements,
+section.registration_section #age_requirements {
+  display: none;
+  color: chocolate;
+}
+
+/* User dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 0.75em;
+  transition: 0.3s all;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgrey;
+}
+
+.show {
+  display: block;
+}
+
+#account_links:hover .dropdown-content {
+  display: block !important;
+}
+/* House Accounts */
+section#house_accounts {
+  width: 1200px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+section#house_accounts .house_heading span {
+  background-color: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+section#house_accounts .add_button {
+  text-align: center;
+  margin-top: 15px;
+}
+section#house_accounts #add_house_account {
+  font-size: 18px;
+}
+section#house_accounts .table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+section#house_accounts .table-row {
+  display: table-row;
+}
+
+section#house_accounts .table-cell,
+section#house_accounts .table-head {
+  display: table-cell;
+  padding: 1em;
+  border: 1px solid #f0f0f0;
+}
+
+section#house_accounts .table-head {
+  font-weight: bold;
+}
+
+section#house_accounts .table-header {
+  background-color: lightgray;
+}
+#house_account_modal_container {
+  display: none;
+}
+#add_house_modal_container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#add_house_modal_container #add_house_modal {
+  position: absolute;
+  z-index: 100000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  padding: 25px;
+  border-radius: 6px;
+}
+#add_house_modal_container #add_house_modal h1 {
+  font-size: 30px;
+  color: chocolate;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+#add_house_modal_container #add_house_modal .input_text {
+  width: 350px;
+}
+
+#add_house_modal_container #add_house_modal .buttons {
+  display: flex;
+  justify-content: center;
+}
+#add_house_modal_container #add_house_modal .buttons a {
+  font-size: 16px;
+}
+
+#edit_house_modal_container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#edit_house_modal_container #edit_house_modal {
+  position: absolute;
+  z-index: 1000000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  padding: 25px;
+  border-radius: 6px;
+}
+#edit_house_modal_container #edit_house_modal h1 {
+  font-size: 30px;
+  color: chocolate;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+#edit_house_modal_container #edit_house_modal .input_text {
+  width: 350px;
+}
+
+#edit_house_modal_container #edit_house_modal .buttons {
+  display: flex;
+  justify-content: center;
+}
+#edit_house_modal_container #edit_house_modal .buttons a {
+  font-size: 16px;
+}
+section.catalog_create {
+  width: 1000px;
+  margin: auto;
+}
+section.catalog_create .sign_heading {
+  width: 1000px;
+}
+
+/* House Picker */
+.house_picker {
+  width: 100%;
+  border: 2px solid chocolate;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 250px;
+}
+.house_picker .house_node {
+  background-color: rgba(210, 105, 30, 0.5);
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 20px;
+  overflow: auto;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  height: 115px;
+}
+.house_picker .house_node img {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+div.catalog_creation_header {
+  width: 1200px;
+  margin: auto;
+}
+div.catalog_creation_header h2 span {
+  background-color: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+
+/* Manage Catalogs */
+#manage_catalog_container {
+  width: 1200px;
+  margin: auto;
+}
+#manage_catalog_container .catalog_item {
+  width: 900px;
+  margin: auto;
+  background: #ccc;
+  padding: 20px;
+  border: 3px solid chocolate;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+#manage_catalog_container .catalog_item .auction_image_cube {
+  width: 185px;
+  height: 185px;
+  margin-right: 40px;
+}
+
+#manage_catalog_container .catalog_item .details_and_actions {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: space-between;
+}
+
+#manage_catalog_container .catalog_item .details_and_actions .bold {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#manage_catalog_container .catalog_item .details_and_actions .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#manage_catalog_container .catalog_item .details_and_actions p.font-18 {
+  font-size: 18px !important;
+}
+#manage_catalog_container .catalog_item .details_and_actions .catalog_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+#manage_catalog_container .catalog_item .details_and_actions .catalog_buttons a {
+  font-size: 15px;
+  margin: 0;
+}
+#manage_catalog_container .catalog_item .details_and_actions .catalog_buttons .catalog_actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+}
+#manage_catalog_container .catalog_item .details_and_actions .catalog_buttons .catalog_actions span {
+  margin-top: 5px;
+}
+#manage_catalog_container .catalog_item .details_and_actions .catalog_buttons .catalog_actions .special {
+  font-size: 20px;
+}
+
+.add_question_modal,
+.edit_question_modal {
+  display: none;
+}
+
+.special_notes {
+  display: none;
+}
+.saving_catalog_disclaimer,
+.saving_lot_disclaimer {
+  display: none;
+}
+
+.create_button_container {
+  text-align: center;
+}
+.create_button_container .create_button {
+  font-size: 15px;
+}
+/* Lot creation */
+.manage_lot_header {
+  width: 1200px;
+  margin: auto;
+}
+.manage_lot_header h2 span {
+  background-color: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+#static_incrementation,
+#progressive_incrementation {
+  display: none;
+}
+#category_tier2_holder,
+#category_tier3_holder,
+#category_tier4_holder,
+#category_other_holder {
+  display: none;
+}
+#lot_container {
+  width: 1200px;
+  margin: auto;
+}
+#lot_container .lot_item {
+  width: 900px;
+  margin: auto;
+  background: #ccc;
+  padding: 20px;
+  border: 3px solid chocolate;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+#lot_container .lot_item .lot_inner {
+  display: flex;
+  min-height: 225px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#lot_container .lot_item .lot_inner .lot_picture {
+  width: 225px;
+}
+#lot_container .lot_item .lot_inner .lot_info {
+  width: calc(100% - 250px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#lot_container .lot_item .lot_inner .lot_info .lot_name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#lot_container .lot_item .lot_inner .lot_info .lot_description {
+  font-size: 18px;
+}
+
+#lot_container .lot_item .lot_inner .lot_info .lot_options {
+  display: flex;
+  justify-content: space-around;
+}
+#lot_container .lot_item .lot_inner .lot_info .lot_options a {
+  font-size: 17px;
+  margin: 0;
+}
+.textarea_duplicate {
+  line-height: normal !important;
+  min-height: 200px !important;
+  padding: 15px !important;
+}
+.drop_form {
+  width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#picture_viewer {
+  width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border: 2px dashed;
+  /* padding: 5px; */
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#picture_viewer .picture_box {
+  width: 275px;
+  height: 275px;
+  /* text-align: center; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: stretch; */
+  /* flex-direction: column; */
+  /* margin-bottom: 50px; */
+  border: 3px solid black;
+  background: whitesmoke;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: all-scroll;
+}
+#picture_viewer .picture_box.empty {
+  cursor: default;
+}
+#picture_viewer .picture_box img {
+  width: 269px;
+  height: 269px;
+  object-fit: contain;
+}
+#picture_viewer .picture_box .option_box {
+  border-top: 5px solid black;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#picture_viewer .picture_box .option_box a.bidzbutton {
+  margin: 0px;
+  font-size: 15px;
+}
+#picture_viewer .picture_box.empty {
+  border: 0px;
+}
+#picture_viewer .picture_box .option_box .default {
+  color: #486d5c;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: UPPERCASE;
+  margin-top: 5px;
+}
+#picture_viewer .picture_box.default {
+  border-color: chocolate;
+}
+#picture_viewer .picture_box.default .option_box {
+  border-color: chocolate;
+}
+.dz-success,
+.dz-complete {
+  color: red;
+  background-color: blue;
+}
+#picture_viewer .picture_box .delete_image_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  color: orangered;
+}
+#picture_viewer .picture_box .delete_image_button a.delete_image_link {
+  color: orangered;
+}
+#sorting_header {
+  text-align: center;
+}
+#sorting_disclaimer {
+  text-align: center;
+  width: 1200px;
+  margin: auto;
+  margin-top: 30px;
+}
+#sorting_header h2.house_heading {
+  margin-top: 55px;
+}
+.save_sorted_pictures {
+  margin-top: 25px !important;
+  font-size: 15px !important;
+}
+.lot_item .lot_inner .lot_picture .lot_image_primary {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 225px;
+  max-width: 225px;
+}
+.cancel_button_container {
+  text-align: center;
+}
+.cancel_button_container .cancel_creation {
+  margin-bottom: 5px;
+}
+.catalog_item .auction_image_cube .catalog_image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.red_error {
+  color: red !important;
+}
+
+.sort_lot_button {
+  margin-top: 0 !important;
+}
+h1.no_lots_to_sort {
+  width: 1200px;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+#lot_sorter_container {
+  width: 1100px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  border: 2px dashed;
+  /* padding: 5px; */
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+#lot_sorter_container .lot_module {
+  width: 31%;
+  border: 2px solid black;
+  background-color: whitesmoke;
+  padding: 15px;
+  margin-bottom: 20px;
+  cursor: move;
+}
+#lot_sorter_container .lot_module .lot_name {
+  font-size: 23px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid chocolate;
+  padding-bottom: 7px;
+}
+
+#lot_sorter_container .lot_module .lot_picture {
+  border-bottom: 2px solid chocolate;
+  padding-bottom: 7px;
+}
+#lot_sorter_container .lot_module .lot_picture .lot_picture_image {
+  width: 100%;
+  margin-top: 15px;
+  object-fit: contain;
+  height: 275px;
+}
+
+#lot_sorter_container .lot_module .lot_description {
+  margin-top: 15px;
+  text-align: justify;
+  border-bottom: 2px solid chocolate;
+  padding-bottom: 10px;
+  height: 45px;
+  overflow: hidden;
+}
+
+#lot_sorter_container .lot_module .lot_details_button {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  display: flex;
+}
+#lot_sorter_container .lot_module .lot_details_button .lot_button {
+  margin: auto;
+  font-size: 15px;
+}
+.catalog_item .auction_image_cube .featured_img_button {
+  font-size: 16px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.catalog_item .auction_image_cube .featured_img_button span {
+  margin-top: 5px;
+}
+
+/* Upload Featured Image */
+#feat_picture_upload .pic_upload_module {
+  width: max-content;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#feat_picture_upload .pic_upload_module #picture_upload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+#feat_picture_upload .pic_upload_module .picture_upload_label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  justify-content: space-between;
+}
+#feat_picture_upload .pic_upload_module .picture_upload_label .upload_button {
+  background-color: chocolate;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+#feat_picture_upload .pic_upload_module .picture_upload_label #file_upload_label_text {
+  max-width: max-content;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+  color: chocolate;
+}
+
+#feat_picture_upload .pic_upload_module .picture_upload_label .upload_button .upload_img {
+  font-size: 45px;
+  color: #f1e5e6;
+}
+#feat_picture_upload .pic_upload_module .picture_upload_label .upload_text {
+  max-width: max-content;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+  color: chocolate;
+}
+
+#feat_picture_upload .pic_upload_module .picture_upload_label #upload_confirmation {
+  display: none;
+}
+#feat_picture_upload .pic_upload_module .picture_upload_label #upload_confirmation svg {
+  color: green;
+}
+#feat_picture_upload .pic_upload_module .picture_upload_label .upload_button:hover {
+  background: rgba(210, 105, 30, 0.75);
+}
+#feat_picture_upload .pic_upload_module .picture_upload_label .upload_button,
+#feat_picture_upload .upload_text {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#featured_photo {
+  height: 250px;
+}
+
+#photo_container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Forgotten Password */
+section.forgotten_password_section {
+  width: 1200px;
+  margin: auto;
+}
+section.forgotten_password_section h2 span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+section.forgotten_password_section .fgt_section {
+  margin: auto;
+  width: 400px;
+}
+section.forgotten_password_section .fgt_section label {
+  font-size: 20px;
+}
+section.forgotten_password_section .fgt_section input {
+  width: 100%;
+  /* height: 30px; */
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid chocolate;
+  line-height: 40px;
+  background: whitesmoke;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 0px 20px 0px 20px;
+  font-size: 1rem;
+  color: black;
+  outline: none;
+  margin: 0;
+  border: 1px solid chocolate;
+  margin-top: 10px;
+}
+section.forgotten_password_section p.section_heading {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+section.forgotten_password_section .next_button {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+}
+#new_password,
+#security_questions {
+  display: none;
+}
+
+#security_questions,
+#new_password {
+  position: relative;
+  z-index: 10;
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px 10px;
+  display: none;
+}
+section.forgotten_password_section p#wrong_username,
+section.forgotten_password_section p#empty_username,
+section.forgotten_password_section p#wrong_answers,
+section.forgotten_password_section p#empty_answers,
+section.forgotten_password_section p#empty_password,
+section.forgotten_password_section p#mismatch_password {
+  margin-top: 20px;
+  color: chocolate;
+  display: none;
+}
+
+#termsandconditions_modal_container {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+}
+#termsandconditions_modal_container #termsandconditions_modal {
+  height: 50%;
+  width: 700px;
+}
+
+#termsandconditions_modal_container #termsandconditions_modal #terms {
+  height: 65%;
+  margin: auto;
+  margin-top: 30px;
+  overflow: auto;
+}
+#termsandconditions_modal_container #termsandconditions_modal .button {
+  text-align: center;
+  margin-top: 20px;
+}
+#terms_link {
+  margin: auto;
+  font-size: 20px;
+}
+#terms_link a.terms_link {
+  color: blue;
+}
+#terms_link a.terms_link:hover {
+  color: chocolate;
+}
+
+#terms_agree {
+  display: none;
+}
+
+#lot_details_modal_container {
+  display: none;
+}
+#lot_location_details_modal {
+  display: none;
+}
+#lot_details_modal {
+  width: 650px;
+  min-height: 50%;
+  background-color: whitesmoke;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+#lot_details_modal .lot_description {
+  padding: 25px 50px;
+  text-align: justify;
+  font-size: 17px;
+}
+
+#lot_details_modal .lot_location_detail {
+  padding: 25px 50px;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+p.category2_cont {
+  text-indent: 30px;
+  margin-top: 5px;
+}
+p.category3_cont {
+  text-indent: 60px;
+  margin-top: 5px;
+}
+p.category4_cont {
+  text-indent: 90px;
+  margin-top: 5px;
+}
+p.category5_cont {
+  text-indent: 120px;
+  margin-top: 5px;
+}
+p.category_item {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h5.lot_details_heading {
+  text-align: center;
+  color: chocolate;
+  width: 75%;
+  border-bottom: 2px solid black;
+  margin: auto;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+#lot_category_container {
+  padding: 25px;
+}
+#lot_details_close_button {
+  text-align: center;
+}
+#lot_details_close_button a.bidzbutton {
+  margin: 0;
+  font-size: 15px;
+}
+#lot_location .lot_location_detail:hover {
+  color: chocolate;
+  cursor: pointer;
+}
+#lot_location_details_modal p.lot_location_detail_address {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+  color: chocolate;
+  font-weight: bold;
+}
+#lot_location_details_modal iframe {
+  border: 2px solid black;
+}
+#lot_location_details_close_button {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#lot_location_details_close_button a.bidzbutton {
+  font-size: 15px;
+  margin: 0;
+}
+.lot_location_details p.lot_location_detail_address {
+  margin-top: 20px;
+  text-align: center;
+  color: chocolate;
+  font-weight: bold;
+  height: 40px;
+  overflow: auto;
+}
+.display_location_modal {
+  color: chocolate;
+}
+.display_location_modal:hover {
+  color: black;
+  cursor: pointer;
+}
+#cat_location_details_modal {
+  display: none;
+}
+#cat_location_details_modal #cat_location_dets {
+  width: 750px;
+  min-height: 60%;
+}
+
+#cat_location_details_modal #cat_location_dets #location_list {
+  color: rgb(102, 102, 102);
+  -webkit-appearance: menulist-button;
+  height: 42px;
+  line-height: 40px;
+  background: whitesmoke;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 0px 20px 0px 20px;
+  font-size: 1rem;
+  color: black;
+  outline: none;
+  margin: 0;
+  border: 1px solid chocolate;
+  width: 100%;
+  margin-top: 25px;
+}
+#cat_location_details_modal #cat_location_dets iframe {
+  width: 100%;
+  margin-top: 20px;
+  border: 2px solid black;
+}
+
+#cat_location_details_modal #cat_location_dets #close_button {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+#cat_location_details_modal #cat_location_dets #close_button a {
+  margin: 0;
+}
+
+#cat_location_details_modal #cat_location_dets #one_location_text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 21px;
+  color: chocolate;
+  font-weight: bold;
+}
+
+/* Spinning Loader */
+.loader {
+  border: 16px solid #bdc3c7;
+  border-radius: 50%;
+  border-top: 16px solid chocolate;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: relative;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#loader_outer {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: none;
+}
+#loader_outer #loader_container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.bid_info_text {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 18px 0px;
+}
+span.lot_optional_label {
+  display: flex;
+  font-size: 1.15rem;
+  margin-bottom: -10px;
+}
+a.manage_lot_map_link {
+  color: chocolate;
+  cursor: pointer;
+  font-weight: bold;
+}
+a.manage_lot_map_link:hover {
+  color: black;
+}
+.manage_house_button_container {
+  text-align: center;
+  margin-top: 15px;
+}
+#manage_house_account_button {
+  font-size: 15px;
+}
+.house_account_modal {
+  max-height: 65%;
+  overflow: auto;
+  width: 1000px;
+}
+.house_account_modal .house_heading span {
+  background-color: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+.house_account_modal .button_container {
+  text-align: center;
+}
+.house_account_modal .button_container a {
+  font-size: 15px;
+}
+#house_account_creator_container {
+  display: none;
+}
+#house_account_modal_container .table {
+  display: table;
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+}
+#house_account_modal_container .table-header {
+  background-color: lightgray;
+}
+#house_account_modal_container .table-row {
+  display: table-row;
+}
+#house_account_modal_container .table-head {
+  font-weight: bold;
+}
+#house_account_modal_container .table-cell,
+#house_account_modal_container .table-head {
+  display: table-cell;
+  padding: 1em;
+  border: 2px solid #f0f0f0;
+}
+#house_account_creator_container {
+  position: fixed;
+  z-index: 20000;
+}
+#house_account_creator_container .add_house_account_modal {
+  width: 750px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  padding: 25px;
+  border-radius: 6px;
+}
+#edit_house_modal_container_2 {
+  position: fixed;
+  z-index: 20000;
+  display: none;
+}
+.copy_lot_modal {
+  max-height: 65%;
+  overflow: auto;
+  width: 750px;
+  height: 65%;
+}
+.copy_lot_modal .copy_heading span {
+  background-color: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+#copy_list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  font-size: 20px;
+}
+#copy_list .copy_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#copy_list .copy_row .left_side {
+  width: 75%;
+}
+#copy_list .left_side .title {
+  font-weight: bold;
+}
+#copy_list .left_side .value {
+  padding-left: 30px;
+}
+#copy_list .right_side {
+  display: flex;
+  align-items: center;
+}
+#copy_list .right_side .square_check {
+  background-color: whitesmoke;
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+  border: 4px solid chocolate;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+#copy_list .right_side .square_check span {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+
+#copy_list .right_side .square_check .check_mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: black;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 35px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: none;
+}
+#copy_lot_modal_container {
+  display: none;
+}
+#copy_list .right_side .circle_check .circle_blank {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid chocolate;
+  border-radius: 50%;
+}
+#copy_list .right_side .circle_check:hover .circle_blank {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: chocolate;
+  background: linear-gradient(Orange, chocolate);
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(orange), to(chocolate)) !important;
+  background: -moz-linear-gradient(orange, chocolate);
+  background: linear-gradient(orange, chocolate);
+}
+
+#copy_list .right_side .circle_check {
+  background-color: whitesmoke;
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+#copy_list .right_side .circle_check .circle_mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: chocolate;
+  background: linear-gradient(Orange, chocolate);
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(orange), to(chocolate)) !important;
+  background: -moz-linear-gradient(orange, chocolate);
+  background: linear-gradient(orange, chocolate);
+}
+#copy_list .right_side .circle_check:hover .circle_mark {
+  background: chocolate;
+  background: linear-gradient(chocolate, orange);
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(chocolate), to(orange)) !important;
+  background: -moz-linear-gradient(chocolate, orange);
+  background: linear-gradient(chocolate, orange);
+  color: white;
+}
+
+#copy_list .right_side .circle_check:active .circle_mark {
+  background: chocolate;
+  background: linear-gradient(chocolate, orange);
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(chocolate), to(orange)) !important;
+  background: -moz-linear-gradient(chocolate, orange);
+  background: linear-gradient(chocolate, orange);
+  color: white;
+}
+.select_unselect_row {
+  width: 75%;
+  margin: auto;
+}
+.circle_mark {
+  display: none;
+}
+
+#browse_section #filter_bar {
+  width: 100%;
+  min-height: 20px;
+  background-color: lightgray;
+}
+
+#browse_section #filter_bar #auction_search h2,
+#browse_section #filter_bar #lot_search h2 {
+  background: chocolate;
+  background-image: url(https://www.transparenttextures.com/patterns/60-lines.png);
+  opacity: 0.9;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#browse_section #filter_bar #auction_search h2 svg,
+#browse_section #filter_bar #lot_search h2 svg {
+  margin-left: 20px;
+}
+#browse_section #filter_bar .search_button a.bidzbutton {
+  font-size: 20px;
+  height: 45px;
+}
+
+#browse_section #filter_bar #auction_search .filter_content,
+#browse_section #filter_bar #lot_search .filter_content {
+  display: flex;
+  justify-content: space-between;
+}
+#browse_section #filter_bar #auction_search .search_content,
+#browse_section #filter_bar #lot_search .search_content {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+#browse_section #filter_bar #auction_search .search_button,
+#browse_section #filter_bar #lot_search .search_button {
+  width: 19%;
+  display: flex;
+  justify-content: center;
+  padding-top: 23px;
+  align-items: center;
+}
+
+#browse_section #filter_bar #auction_search .search_content input,
+#browse_section #filter_bar #auction_search .search_content select,
+#browse_section #filter_bar #lot_search .search_content input,
+#browse_section #filter_bar #lot_search .search_content select {
+  line-height: 40px;
+  background: whitesmoke;
+  box-shadow: inset 0px 1px 3px 0px rgb(0 0 0 / 8%);
+  border-radius: 5px;
+  padding: 0px 20px 0px 20px;
+  font-size: 1rem;
+  color: black;
+  outline: none;
+  margin: 0;
+  border: 1px solid chocolate;
+  width: 100%;
+  height: 42px;
+}
+#browse_section #filter_bar #auction_search .search_content,
+#browse_section #filter_bar #lot_search .search_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#browse_section #filter_bar #auction_search .search_content label,
+#browse_section #filter_bar #lot_search .search_content label {
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.15rem;
+}
+
+#browse_section #filter_bar #auction_search .search_content .group {
+  width: 22%;
+}
+#browse_section #filter_bar #lot_search .search_content {
+  flex-wrap: wrap;
+  padding: 15px 0px;
+}
+#browse_section #filter_bar #lot_search .search_content .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#browse_section #filter_bar #lot_search .search_content .group {
+  width: 30%;
+}
+#browse_section #filter_bar #lot_search .search_content .group2 {
+  width: 22%;
+}
+
+#browse_section #filter_bar #lot_search .search_content .row2 {
+  margin-top: 10px;
+}
+
+#browse_section #filter_bar #lot_search .search_content .zipcode_radius {
+  width: 49.05%;
+}
+#browse_section #catalogs_and_lots {
+  margin-top: 25px;
+}
+
+#browse_section #catalogs_and_lots .catalog {
+  display: flex;
+  min-height: 235px;
+  font-size: 21px;
+  padding: 15px;
+  background-color: #e8e8e8;
+  border: 2px solid grey;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 30px;
+}
+#browse_section #catalogs_and_lots .catalog .picture {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+#browse_section #catalogs_and_lots .catalog .details {
+  width: 75%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#browse_section #catalogs_and_lots .catalog .picture img.catalog_picture {
+  width: 100%;
+  display: flex;
+  height: 75%;
+}
+#browse_section #catalogs_and_lots .catalog .details .row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  align-items: center;
+}
+#browse_section #catalogs_and_lots .catalog .details a.bidzbutton {
+  margin: 0;
+  font-size: 18px;
+}
+
+#browse_section #catalogs_and_lots .catalog .details span.chocolate {
+  color: chocolate;
+}
+#browse_section #catalogs_and_lots .catalog .lot_drop_down {
+  width: 250px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+#browse_section #catalogs_and_lots .catalog .lot_drop_down svg {
+  font-size: 50px;
+  filter: drop-shadow(0px 5px 1px lightgrey);
+  cursor: pointer;
+}
+#browse_section #catalogs_and_lots .lots {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#browse_section #catalogs_and_lots .lots .lot_arrow_left,
+#browse_section #catalogs_and_lots .lots .lot_arrow_right {
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#browse_section #catalogs_and_lots .lots .lot_arrow_left svg,
+#browse_section #catalogs_and_lots .lots .lot_arrow_right svg {
+  font-size: 60px;
+  cursor: pointer;
+}
+
+#browse_section #catalogs_and_lots .lots .lot_lister {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+#browse_section #catalogs_and_lots .lots .lot_lister::-webkit-scrollbar {
+  display: none;
+}
+#browse_section #catalogs_and_lots .lots .lot_mod {
+  width: 30%;
+  font-size: 17px;
+  padding: 10px;
+  background: #ededed;
+  height: 100%;
+}
+#browse_section #catalogs_and_lots .lots .lot_mod .picture img {
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  height: 225px;
+}
+
+#browse_section #catalogs_and_lots .lots .lot_mod a.bidzbutton {
+  margin: 0px;
+  font-size: 15px;
+}
+#browse_section #catalogs_and_lots .lots .lot_mod .row {
+  margin-top: 10px;
+  white-space: pre-wrap;
+}
+
+#browse_section #catalogs_and_lots .lots .lot_mod .but_row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#browse_section #catalogs_and_lots .lots .lot_mod .but_row2 {
+  display: flex;
+  justify-content: center;
+}
+
+#browse_section #catalogs_and_lots .lots .lot_mod .ending_datetime {
+  display: flex;
+}
+#browse_section #catalogs_and_lots .lots .lot_mod .ending_datetime.time_remaining_row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+#browse_section #catalogs_and_lots .lots .lot_mod .bid_information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#browse_section #catalogs_and_lots .lots .lot_mod .asset_location {
+  text-align: center;
+}
+
+#browse_section #catalogs_and_lots .lots .lot_mod .bid_information .bid_title {
+  margin-bottom: 10px;
+}
+#browse_section #catalogs_and_lots .lots .lot_mod .ending_datetime span {
+  text-align: center;
+}
+
+#browse_section #catalogs_and_lots .lots .lot_mod span.chocolate {
+  color: chocolate;
+}
+.hide-show {
+  margin: -3.62em 3% 0 1.5%;
+  position: relative;
+  z-index: 5;
+  display: none;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: flex;
+  align-items: flex-end;
+  height: 63px;
+  justify-content: flex-end;
+  display: flex;
+  float: right;
+  width: 50px;
+}
+.hide-show span {
+  font-size: 1.5em;
+  padding: 0.5em;
+  float: right;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hide-show span:hover {
+  color: chocolate;
+}
+#hide_password {
+  display: none;
+}
+.lot_arrow_right svg {
+  filter: drop-shadow(-2px 7px 1px lightgrey);
+  cursor: pointer;
+}
+.lot_arrow_left svg {
+  filter: drop-shadow(2px 7px 1px lightgrey);
+  cursor: pointer;
+}
+.lot_arrow_right,
+.lot_arrow_left {
+  cursor: auto;
+}
+.disabled_buttons a.disable {
+  cursor: not-allowed;
+  filter: brightness(0.5);
+}
+.auction_image_cube a.disabled {
+  cursor: not-allowed;
+  filter: brightness(0.5);
+}
+.create_button_container .bidzbutton.red.create_button svg {
+  margin-right: 5px;
+}
+#copy_list .right_side .circle_check_missing_lots {
+  background-color: whitesmoke;
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+#copy_list .right_side .circle_check_missing_lots .circle_mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: chocolate;
+  background: linear-gradient(Orange, chocolate);
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(orange), to(chocolate)) !important;
+  background: -moz-linear-gradient(orange, chocolate);
+  background: linear-gradient(orange, chocolate);
+}
+#copy_list .right_side .circle_check_missing_lots .circle_blank {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid chocolate;
+  border-radius: 50%;
+}
+#copy_list .right_side .circle_check_missing_lots:hover .circle_blank {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: chocolate;
+  background: linear-gradient(Orange, chocolate);
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(orange), to(chocolate)) !important;
+  background: -moz-linear-gradient(orange, chocolate);
+  background: linear-gradient(orange, chocolate);
+}
+#choose_mass_locations {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 22px;
+}
+.extended_options {
+  display: none;
+}
+h4.manage_catalog_heading {
+  display: flex;
+  justify-content: center;
+}
+h4.manage_catalog_heading span {
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: -8px;
+  display: flex;
+  align-items: center;
+}
+
+h4.manage_catalog_heading span.catalog_arrow {
+  font-size: 20px;
+}
+h4.manage_catalog_heading a.sort_down_button {
+  margin-top: -15px;
+  font-size: 20px;
+}
+h4.manage_catalog_heading svg {
+  font-size: 35px;
+}
+h4.manage_catalog_heading a.sort_up_button {
+  margin-bottom: -15px;
+  font-size: 20px;
+}
+/* Sorted catalog items */
+.catalog_container {
+  width: 1200px;
+  margin: auto;
+}
+.catalog_container .catalog_item {
+  width: 1150px;
+  margin: auto;
+  background: #ccc;
+  padding: 20px;
+  border: 3px solid chocolate;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.catalog_container .catalog_item .auction_image_cube {
+  width: 225px;
+  height: 185px;
+  margin-right: 40px;
+}
+.catalog_container .catalog_item .auction_sidebar_list {
+  min-height: 125%;
+  display: flex;
+  flex-direction: column;
+}
+.catalog_container .catalog_item .auction_sidebar_list a {
+  width: 100%;
+}
+.catalog_container .catalog_item .auction_sidebar_list_stage {
+  display: flex;
+  flex-direction: column;
+}
+.catalog_container .catalog_item .details_and_actions {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.catalog_container .catalog_item .details_and_actions .bold {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.catalog_container .catalog_item .details_and_actions .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.catalog_container .catalog_item .details_and_actions p.font-18 {
+  font-size: 18px !important;
+}
+.catalog_container .catalog_item .details_and_actions .catalog_action_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.catalog_container .catalog_item .details_and_actions .catalog_action_buttons a {
+  font-size: 15px;
+  margin: 0;
+}
+.catalog_container .catalog_item .details_and_actions .catalog_action_buttons .catalog_actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+}
+.catalog_container .catalog_item .details_and_actions .catalog_action_buttons .catalog_actions span {
+  margin-top: 5px;
+}
+.catalog_container .catalog_item .details_and_actions .catalog_action_buttons .catalog_actions .special {
+  font-size: 20px;
+}
+.manage_catalog_heading a.sort_up_button,
+.manage_catalog_heading a.sort_down_button {
+  color: red;
+}
+.manage_catalog_heading a.sort_up_button:hover,
+.manage_catalog_heading a.sort_down_button:hover {
+  color: chocolate;
+}
+.manage_catalog_heading a.sort_down_button {
+  display: none;
+}
+#advanced_search_button,
+#reset_search_button,
+#filter_button {
+  font-size: 17px;
+  margin: 0px;
+}
+#advanced_search_button,
+#reset_search_button {
+  margin-right: 15px;
+}
+.search_button_container {
+  display: flex;
+  justify-content: center;
+}
+#advanced_search_modal_container {
+  display: none;
+}
+
+#advanced_search_modal {
+  width: 1050px;
+}
+#advanced_search_modal h2.section_heading span {
+  color: chocolate;
+  background: whitesmoke;
+  padding: 15px;
+}
+.zipcode_distance_container {
+  display: flex;
+  justify-content: space-between;
+}
+.zipcode_distance_container input {
+  width: 47% !important;
+}
+
+#catalog_switch_element {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  width: 400px;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+#catalog_switch_element .left_label {
+  margin-right: 15px;
+}
+
+#catalog_switch_element .right_label {
+  margin-left: 15px;
+}
+
+.col4_alt {
+  width: 22%;
+}
+.action_buttons a {
+  font-size: 17px;
+}
+.action_buttons {
+  display: flex;
+  justify-content: center;
+}
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  justify-content: initial !important;
+}
+.scrolling-wrapper .card {
+  flex: 0 0 auto;
+  width: 30%;
+  margin: 0 21px;
+  padding: 10px;
+  font-size: 17px;
+}
+.scrolling-wrapper .card .lot_mod {
+  width: auto !important;
+}
+.scrolling-wrapper .card .lot_mod .ending_datetime {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scrolling-wrapper .card .lot_mod .ending_datetime span {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+section#browse_section #catalogs_and_lots .catalog .lot_drop_down span.drop_down_container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+section#browse_section #catalogs_and_lots .catalog .lot_drop_down span.hide_show_lots {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 20px;
+}
+section#browse_section #catalogs_and_lots .catalog .lot_drop_down span.drop_down_container:hover {
+  color: chocolate;
+}
+
+section#browse_section #catalogs_and_lots .catalog .lot_drop_down .replace_hidden {
+  display: none;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section#browse_section #catalogs_and_lots .catalog .lot_drop_down .replace_show {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section#browse_section #catalogs_and_lots .cat_group {
+  padding: 40px;
+}
+section#browse_section #catalogs_and_lots .lot_container_lister {
+  display: none;
+}
+.chips {
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 0 0 20px 0;
+  min-height: 45px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.chips .input {
+  background: none;
+  border: 0;
+  color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  font-size: 1rem;
+  height: 3rem;
+  line-height: 32px;
+  outline: 0;
+  margin: 0;
+  padding: 0 !important;
+  width: 120px !important;
+}
+.chip {
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: #e4e4e4;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.chip .close {
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+  line-height: 32px;
+  padding-left: 8px;
+}
+.no_catalogs_published {
+  text-align: center;
+  font-size: 25px;
+  color: chocolate;
+}
+.card .lot_mod.view_all_lots {
+  height: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: lightgrey !important;
+  border-radius: 10px;
+}
+.card .lot_mod.view_all_lots .view_all_lots_container {
+  background-color: #ededed;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card .lot_mod.view_all_lots .view_all_lots_container:hover *{
+  color: chocolate;
+}
+.card .lot_mod .browse_bid_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .lot_mod .card_action_row {
+  display: flex;
+  margin-top: 15px;
+}
+
+.card .lot_mod .card_action_row a {
+  width: 150px;
+}
+.card .card_action_row.watching_row {
+  display: flex;
+  flex-direction: column;
+
+}
+.card .card_action_row.watching_row .watching_label{
+  text-align: center;
+  font-size: 20px;
+}
+.card .card_action_row .catalog_switch_element{
+  font-size: 20px;
+  width: 175px;
+}
+.modal_action_button_container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.modal_action_button_container a {
+  margin: 0px !important;
+}
+
+/* Catalog location modals */
+.location_details_modal #cat_location_dets {
+  width: 750px;
+  min-height: 60%;
+}
+
+.location_details_modal #cat_location_dets #location_list,
+.location_details_modal #cat_location_dets #map_location_list{
+  color: rgb(102, 102, 102);
+  -webkit-appearance: menulist-button;
+  height: 42px;
+  line-height: 40px;
+  background: whitesmoke;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 0px 20px 0px 20px;
+  font-size: 1rem;
+  color: black;
+  outline: none;
+  margin: 0;
+  border: 1px solid chocolate;
+  width: 100%;
+  margin-top: 25px;
+}
+.location_details_modal  #cat_location_dets iframe {
+  width: 100%;
+  margin-top: 20px;
+  border: 2px solid black;
+}
+.location_details_modal  #cat_location_dets #close_button {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+.location_details_modal #cat_location_dets #close_button a {
+  margin: 0;
+}
+.location_details_modal  #cat_location_dets #one_location_text,
+.location_details_modal  #cat_location_dets #multi_location_text  {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 21px;
+  color: chocolate;
+  font-weight: bold;
+}
+.manage_modal{
+  width: 1000px;  
+}
+.manage_modal .section_heading{
+  width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #666;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.manage_modal .section_heading span{
+  background-color: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+.manage_modal .table{
+  display: table;
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+}
+.manage_modal .table-row{
+  display: table-row;
+}
+.manage_modal .table-header{
+  background-color:lightgrey;  
+}
+.manage_modal .table-cell, .manage_modal .table-head {
+  display: table-cell;
+  padding: 1em;
+  border: 2px solid #f0f0f0;
+}
+.manage_modal .table-head{
+  font-weight: bold;
+}
+.manage_modal .button_container{
+  text-align: center;
+}
+.manage_modal .button_container a{
+  font-size: 15px;
+}
+.manage_modal .button_container a#open_creator_contact svg,  
+.manage_modal .button_container a#open_creator_inspection svg{
+  margin-right: 10px;
+}
+.invalid_dates_disclaimer{
+  justify-content: center;
+  margin-top: 25px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+.location_hover_browse{
+  color: chocolate;
+}
+.location_hover_browse:hover{
+  color: black;
+}
+.object_fit_contain{
+  object-fit: contain;
+}
+.view_all_lots_container .view_all_text{
+  font-size: 25px;
+  width: 80%;
+  white-space: normal;
+  text-align: center;
+
+}
+.lot_card_special{
+  height: 50%;
+  width: 100% !important;
+}
+.lot_justify{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.width_100{
+  width: 100%;
+}
+.card_container{
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.icon_container{
+  display: flex !important;
+    flex-direction: column;
+}
+.icon_container svg{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+#registration_question_container{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+}
+#registration_question_container #registration_question_modal{
+  position: absolute;
+  z-index: 100000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  padding: 25px;
+  border-radius: 6px;
+  width: 600px;
+  max-height: 600px;
+  overflow: auto;
+}
+#registration_question_container #registration_question_modal h1.registration_header{
+  font-size: 30px;
+  color: chocolate;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+.registration_row .signup_group label{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.registration_button_container{
+  display: flex;
+  justify-content:center;
+}
+.registration_button_container a.bidzbutton{
+  font-size:15px;
+  margin-bottom: 0px;
+}
+.approved_container{
+  display: flex;
+  align-items: center;
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+.denied_container{
+  display: flex;
+  align-items: center;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+.approved_container .approval_text{
+  margin-left: 15px;
+}
+.denied_container .denied_text{
+  margin-left: 15px;
+}
+.pending_container{
+  display: flex;
+  align-items: center;
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pending_container .pending_text{
+  margin-left: 15px;
+}
+#registration_question_container{
+  display:none;
+}
+
+/* Lot Details Page */
+#lot_details_page{
+  width: 1200px;
+}
+#lot_details_page h4.sign_heading span{
+    background: whitesmoke;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #666;
+    font-size: 20px;
+}
+#lot_details_page .button_container{
+  text-align: center;
+  margin-bottom: 40px;
+}
+#lot_details_page .button_container a.bidzbutton{
+  margin: 0;
+  font-size: 15px;
+}
+#lot_details_page #lot_details_container{
+  width: 1200px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+#lot_details_page #lot_details_left_column{
+  width: 40%;
+}
+#lot_details_page #lot_details_left_column #lot_picture_container{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  border: 2px solid black;
+  margin: auto;
+  margin-bottom: 35px;
+}
+#lot_details_page #lot_details_left_column #lot_location_container{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 35px;
+}
+#lot_details_page #lot_details_right_column{
+  width: 55%;
+}
+#lot_details_page #lot_details_right_column .category_line1{
+  margin-left: 25px;
+}
+#lot_details_page #lot_details_right_column .category_line2{
+  margin-left: 50px;
+}
+#lot_details_page #lot_details_right_column .category_line3{
+  margin-left:75px;
+}
+#lot_details_page #lot_details_right_column .category_line4{
+  margin-left: 100px;
+}
+#lot_details_page #lot_details_right_column .category_line5{
+  margin-left: 125px;
+}
+#lot_details_page #lot_details_right_column #bidding_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ddd;
+  border-radius: 10px;
+  flex-direction: column;
+  margin-top: 25px;
+}
+#lot_details_page #lot_details_right_column #watching_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ccc;
+  border-radius: 10px;
+  flex-direction: column;
+}
+#lot_details_page #lot_details_right_column #bidding_container .bidding_buttons{
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#lot_details_page #lot_details_right_column #bidding_container .bidding_buttons .bidding_input{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+#lot_details_page #lot_details_right_column #bidding_container #current_bid{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+#lot_details_page #lot_details_left_column #lot_pagination{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: chocolate;
+  font-weight: bold;
+}
+#lot_details_page #lot_details_left_column #lot_note_taking{
+  display: flex;
+    justify-content: center;
+}
+#lot_details_page #lot_details_left_column #lot_note_taking a.bidzbutton{
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+#lot_details_page #lot_details_right_column #watching_button_container .watching_button_row a.bidzbutton{
+  font-size: 17px;
+  margin: 0;
+}
+#lot_details_page #lot_details_right_column #watching_button_container #watching_button_row1{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#lot_details_page #lot_details_right_column #watching_button_container #watching_button_row1 #currently_watching{
+  font-size: 20px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+}
+#lot_details_page #lot_details_right_column #extended_bidding_container p{
+  text-align: center;
+  font-size: 20px;
+}
+#lot_details_page #lot_details_right_column #watching_button_container #watching_button_row1 #currently_watching .watching_label{
+  font-weight: bold;
+  margin-left: 5px;
+}
+#lot_details_page #lot_details_right_column #watching_button_container .catalog_switch_element{
+  width: 65%;
+}
+#lot_details_page #lot_details_right_column #watching_button_container #watching_button_row2{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+#lot_details_page #lot_details_right_column #bidding_container #lot_ending_countdown{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+#lot_details_page #lot_details_right_column #bidding_container #leader_information{
+  margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+#lot_details_page #lot_details_right_column .lot_details_heading span.catalog_heading{
+  margin-bottom: -10px;
+}
+#lot_details_page #lot_details_right_column .lot_details_heading span.catalog_arrow{
+  margin-bottom: -25px;
+}
+#lot_details_page #lot_details_right_column .lot_details_heading{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+#lot_details_page #lot_details_right_column .bidding_heading{
+  margin-top: 25px;
+}
+#lot_details_page #lot_details_right_column .extra_info_table{
+  display: table;
+  border-collapse: collapse;
+  background: whitesmoke;
+  color: chocolate;
+  border: 6px inset #666;
+  border-top: 0;
+  border-bottom: 0;
+  width: 100%;
+}
+#lot_details_page #lot_details_right_column .middle_table{
+  border-bottom: 0;
+  border-top: 0;
+}
+#lot_details_page #lot_details_right_column .last_table{
+
+  border: 6px inset #666;
+  border-top: 0;
+}
+#lot_details_page #lot_details_right_column .extra_info_table .extra_info_row {
+  display: table-row;
+}
+
+#lot_details_page #lot_details_right_column .extra_info_table .extra_info_row .extra_info_cell {
+  display: table-cell;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;;
+}
+
+#lot_details_page #lot_details_right_column .extra_info_table .extra_info_row .cell_caption{
+  color: black;
+}
+#lot_details_page #lot_details_right_column #lot_details_container{
+  justify-content: center;
+  width: auto;
+}
+#lot_details_page .catalog_information #nav_tabs li.nav_item{
+  width: calc(100%/3);
+}
+#lot_details_page .catalog_information #nav_tabs li.nav_item a{
+  font-size: 16px;
+}
+#lot_details_page .catalog_information #nav_tabs li.nav_item:not(.active) {
+  background-color: whitesmoke;
+  
+  background-image: linear-gradient(to left,
+                    transparent,
+                    transparent 50%,
+                    lightgray 50%,
+                    lightgray);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+}
+#lot_details_page .catalog_information #nav_tabs li.nav_item:not(.active):hover{
+  background-position: 0 0;
+}
+#lot_details_page .catalog_information #nav_tabs li.nav_item.active{
+  background-color: lightgray;
+}
+#lot_details_page .catalog_information #auctioneer_info #auctioneer_name_and_logo a.auctioneer_website{
+  margin-top: 5px;
+}
+#lot_details_page .catalog_information #terms_and_conditions{
+  display: initial;
+  width: 47%;
+  padding: 10px;
+}
+#lot_details_page .catalog_information .ourmodule{
+  display: flex;
+}
+/* Catalog browse page */
+#browse_by_catalog #catalog_information{
+  width: 100%;
+  min-height: 350px;
+  background-color: #e8e8e8;
+  border: 2px solid grey;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+#browse_by_catalog #catalog_information #catalog_left{
+  width: 27.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#browse_by_catalog #catalog_information #catalog_left .catalog_button{
+  margin-bottom: 20px;
+}
+#browse_by_catalog #catalog_information #catalog_left .catalog_button a{
+  font-size: 18px;
+  margin: 0;
+}
+#browse_by_catalog #catalog_information #catalog_left #catalog_picture{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+#browse_by_catalog #catalog_information #catalog_left #catalog_picture img{
+  display: flex;
+  width: 100%;
+}
+#browse_by_catalog #catalog_information #catalog_right{
+  width: 70%;
+  padding-right: 50px;
+}
+#browse_by_catalog #catalog_information #catalog_right #catalog_name_and_description .catalog_name{
+  font-size: 30px;
+    text-align: center;
+    margin: 15px;
+}
+#browse_by_catalog #catalog_information #catalog_right #catalog_name_and_description .catalog_description{
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+#browse_by_catalog #catalog_information #catalog_right #catalog_other_information .catalog_information_row{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+#browse_by_catalog #catalog_information #catalog_right #catalog_start_and_end_countdown{
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: center;
+}
+#browse_by_catalog #catalog_information #catalog_right #catalog_start_and_end_countdown .catalog_display_status{
+  margin-bottom: 10px;
+}
+#browse_by_catalog #catalog_information #catalog_right #catalog_asset_location{
+  font-size: 20px;
+  margin-top: 13px;
+  text-align: center;
+}
+#browse_by_catalog #view_by_switch h2.switch_heading{
+  margin: 25px 0;
+  text-align: center;
+  font-size: 30px;
+}
+#browse_by_catalog #view_by_switch .catalog_switch_element{
+  width: 250px;
+  font-size: 25px;
+}
+.browse_bid_button .watching_row .catalog_switch_element{
+  font-size: 20px;
+    width: 190px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+#browse_by_catalog #list_of_lots_in_catalog .single_lot_list{
+  width: 95%;
+  height: 350px;
+  background: #eee;
+  border: 2px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+#browse_by_catalog #list_of_lots_in_catalog .single_lot_list .single_lot_left{
+  width: 32%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#browse_by_catalog #list_of_lots_in_catalog .single_lot_list .single_lot_left .single_lot_buttons{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+#browse_by_catalog #list_of_lots_in_catalog .single_lot_list .single_lot_right{
+  width: 63%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+}
+#browse_by_catalog #list_of_lots_in_catalog .single_lot_list .single_lot_left .single_lot_img{
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#browse_by_catalog #list_of_lots_in_catalog .single_lot_list .single_lot_left .single_lot_img img{
+  width: 90%;
+  object-fit: contain;
+}
+#browse_by_catalog #list_of_lots_in_catalog .single_lot_list .single_lot_left .single_lot_buttons .lot_buttons{
+  font-size: 18px;
+  margin: 0;
+}
+#browse_by_catalog #list_of_lots_in_catalog .single_lot_list .single_lot_right .single_lot_row{
+  margin: 15px 0;
+}
+/* Seller Dashboard */
+#seller_dashboard{
+  width: 1100px;
+  margin: auto;
+}
+#seller_dashboard .section_heading span{
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+#seller_dashboard #seller_dashboard_table{
+  display: flex;
+  justify-content:space-between;
+}
+#seller_dashboard #seller_dashboard_table #seller_dashboard_table_left{
+  width: 25%;
+  min-height: 100%;
+  background-color: rgb(52, 58, 64);
+  border: 2px solid rgb(52, 58, 64);
+  color: white;
+  border-right: 0;
+  border-left: 0;
+}
+#seller_dashboard #seller_dashboard_table #seller_dashboard_table_left li.navlink svg{
+  margin-right: 10px;
+  font-size: 20px;
+}
+#seller_dashboard #seller_dashboard_table #seller_dashboard_table_right{
+  width: 75%;
+  border: 2px solid rgb(52, 58, 64);
+  border-left: 0;
+}
+#seller_dashboard #seller_dashboard_table #seller_dashboard_table_left ul#seller_dashboard_links li.navlink a{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  position: relative;
+}
+#seller_dashboard #seller_dashboard_table #seller_dashboard_table_left ul#seller_dashboard_links li{
+  position: relative;
+  color: white;
+  padding: 10px 25px;
+}
+#seller_dashboard #seller_dashboard_table #seller_dashboard_table_left ul#seller_dashboard_links li.active{
+  background-color: chocolate;
+}
+#seller_dashboard #seller_dashboard_table #seller_dashboard_table_left ul#seller_dashboard_links li a{
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+#seller_dashboard #seller_dashboard_table #seller_dashboard_table_left ul#seller_dashboard_links li:hover::before{
+  transform: scaleY(1);
+  width: 100%;
+  color: white;
+}
+#seller_dashboard #seller_dashboard_table #seller_dashboard_table_left ul#seller_dashboard_links li:before{
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: chocolate;
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+}
+#seller_dashboard #seller_dashboard_table #seller_dashboard_table_right{
+  padding: 20px;
+}
+h4.seller_dashboard_module_heading{
+    width:95%;
+    text-align: center;
+    border-bottom: 3px solid chocolate;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+h4.seller_dashboard_module_heading span{
+  background: whitesmoke;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #666;
+    font-size: 20px;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_contents{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #eee;
+  border: 2px solid lightgray;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_left{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_left .view_catalog_details{
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 18px;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_right{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_left img.catalog_image{
+  width: 100%;
+  object-fit: contain;
+  height: 175px;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_right .catalog_name{
+  text-align: center;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_right .catalog_description{
+  text-align: justify;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_right .asset_location{
+  text-align: center;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_right .catalog_countdown{
+  text-align: center;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_view_more{
+      width: 235px;
+    height: 50px;
+    background-color: white;
+    margin: auto;
+    border: 2px solid grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    align-items: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_view_more svg{
+  font-size: 50px;
+    filter: drop-shadow(0px 5px 1px lightgrey);
+    cursor: pointer;
+    margin-left: 5px;
+    transform: rotate(180deg);
+}
+#catalog_registration_module #catalog_registration_list .catalog_item .catalog_view_more .arrow{
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants{
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record {
+  background: white;
+    border: 2px solid lightgrey;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_left{
+  width: 26%;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  align-items: center;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_left .record_name,
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_left .record_username
+{
+  font-size: 17px;
+  font-weight: bold;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_left .record_username{
+  margin-top: 10px;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_left .record_status{
+  margin-top: 10px;
+  font-size: 18px;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_left .record_status svg{
+  margin-right: 4px;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_right{
+  width: 74%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record a.bidzbutton{
+  margin: 0;
+  font-size: 16px;
+}
+#catalog_registration_module #catalog_registration_list .catalog_block{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+#catalog_registration_module #catalog_registration_list .catalog_block:first-child{
+  margin-top: 0px;
+}
+#catalog_registration_module #catalog_registration_list .catalog_view_more:hover{
+  color: chocolate;
+  cursor: pointer;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_left .record_status_output{
+  margin-top: 10px;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_left .record_status.approved_record{
+  color: green;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_left .record_status.pending_record{
+  color: blue;
+}
+#catalog_registration_module #catalog_registration_list .list_of_registrants .registrant_record .record_left .record_status.denied_record{
+  color: red;
+}
+#view_answers_modal_container{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#view_answers_modal_container #view_answers_modal{
+  position: absolute;
+    z-index: 100000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    padding: 25px;
+    border-radius: 6px;
+    width: 600px;
+    max-height: 600px;
+    overflow: auto;
+}
+#view_answers_modal_container #view_answers_modal h2{
+    font-size: 30px;
+    color: chocolate;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+#view_answers_modal_container #view_answers_modal #all_question_list{
+  margin-top: 25px;
+}
+#view_answers_modal_container #view_answers_modal #all_question_list .registration_row{
+  margin-bottom: 15px;
+}
+#view_answers_modal_container #view_answers_modal .question_label{   
+   font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#view_answers_modal_container #view_answers_modal .question_answer{
+  font-size: 22px;
+  margin-left: 25px;
+  text-align: justify;
+}
+#view_answers_modal_container #view_answers_modal #action_buttons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#view_answers_modal_container #view_answers_modal #action_buttons a{
+  margin: 0;
+  font-size: 15px;
+}
+#view_answers_modal_container #view_answers_modal #ethical_disclaimer{
+  font-size: 18px;
+}
+/* Asset Location Maps Global */
+#single_map_modal{
+  display: none;
+}
+#multiple_maps_modal{
+  display: none;
+}
+.not_logged_in_container .not_logged_in_text .chocolate a{
+  color: chocolate;
+}
+.not_logged_in_container .not_logged_in_text .chocolate a:hover{
+  color: black;
+}
+.logged_out_disclaimer{
+  font-size: 20px;
+}
+.logged_out_disclaimer a{
+  color: chocolate;
+}
+.logged_out_disclaimer a:hover{
+  color: black;
+}
+#auction_information .auc_module{
+  display: flex;
+}
+#auction_information .module_container{
+  display: none;
+}
+#auction_information .module_container_start{
+  display: flex;
+}
+ #lot_picture_container{
+  position: relative;
+}
+#lot_details_container #lot_picture_container img{
+  object-fit: contain;
+  width: 100%;
+}
+#lot_details_container #lot_picture_container #lot_picture_selector{
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  bottom: 0;
+  height: 115px;
+  padding: 15px;
+}
+#lot_details_container #list_of_lot_pictures{
+  width: 90%;
+  justify-content: start;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+#lot_details_container #list_of_lot_pictures img{
+  width: 32%;
+  margin-right: 5.75px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  border: 2px solid lightgray;
+}
+#lot_details_container #list_of_lot_pictures img:first-child{
+  border: 2px solid chocolate;
+}
+#lot_location_container iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.contact_table {
+  display: table;
+  width: 85%;
+  border-collapse: collapse;
+  margin: auto;
+}
+.contact_table .contact_header {
+  border-bottom: 3px solid chocolate;
+  font-weight: bold;
+}
+.contact_table .contact_record,
+.contact_table .contact_header {
+  display: table-row;
+}
+
+.contact_table .contact_record .contact_name,
+.contact_table .contact_record .contact_phone,
+.contact_table .contact_header .contact_name,
+.contact_table .contact_header .contact_phone {
+  display: table-cell;
+  padding: 1em;
+  border: 2px chocolate solid;
+  text-align: center;
+}
+.contact_table .contact_header .contact_name,
+.contact_table .contact_header .contact_phone {
+  font-weight: bold;
+}
+#contact_information .contact_table .contact_header{
+  border: 2px solid chocolate;
+  padding: 15px;
+  text-align: center;
+  display: table-row;
+  font-size: 20px;
+}
+
+#contact_information .contact_table .contact_footer .location_header,
+#contact_information .contact_table .contact_header .location_header {
+  padding: 15px;
+}
+#contact_information .contact_table .contact_footer{
+  border: 2px solid chocolate;
+  padding: 15px;
+  text-align: center;
+  display: table-row;
+  font-size: 20px;
+}
+#contact_information .contact_table .contact_record{
+  display: table-row;
+}
+
+.inspection_table {
+  display: table;
+  width: 95%;
+  margin: auto;
+  border-collapse: collapse;
+}
+.inspection_table .inspection_row,
+.inspection_table .inspection_header {
+  display: table-row;
+}
+.inspection_table .inspection_cell,
+.inspection_table .insp_cell_head {
+  display: table-cell;
+  padding: 1em;
+  border: 2px chocolate solid;
+  text-align: center;
+}
+.inspection_table .insp_cell_head {
+  font-weight: bold;
+}
+.inspection_table .inspection_header {
+  border: 2px solid chocolate;
+  padding: 15px;
+  text-align: center;
+  display: table-row;
+  font-size: 20px;
+}
+#inspection_and_removal .inspection_table .inspection_header .location_header,
+#inspection_and_removal .inspection_table .inspection_footer .location_header{
+  padding: 15px;
+}
+
+.removal_table {
+  display: table;
+  width: 95%;
+  border-collapse: collapse;
+  margin: auto;
+}
+.removal_table .removal_header,
+.removal_table .removal_row {
+  display: table-row;
+}
+.removal_table .removal_header {
+  border: 2px solid chocolate;
+  padding: 15px;
+  text-align: center;
+  display: table-row;
+  font-size: 20px;
+}
+.removal_table .removal_header .remove_cell_head,
+.removal_table .removal_row .removal_cell {
+  display: table-cell;
+  padding: 1em;
+  border: 2px chocolate solid;
+  text-align: center;
+}
+.removal_table .removal_header .remove_cell_head {
+  font-weight: bold;
+}
+#inspection_and_removal .removal_table .removal_header .location_header,
+#inspection_and_removal .removal_table .removal_footer .location_header{
+  padding: 15px;
+}
+#lot_details_right_column .lot_details_entry{
+  font-size: 25px;
+}
+
+#lot_details_right_column .lot_details_entry .entry_title {
+  font-weight: bold;
+  display: block;
+}
+#lot_details_right_column .lot_details_basic_information{
+  display: flex;
+  flex-direction: column;
+}
+#lot_details_right_column .lot_details_entry .entry_answer{
+  display: flex;
+  justify-content: center;
+}
+#lot_details_right_column .lot_details_entry .category_list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 22px;
+}
+#lot_details_right_column .lot_details_entry .category_list .category_item {
+  margin: 5px;
+}
+#lot_details_right_column .lot_details_basic_information .orange_dash{
+  height: 2px;
+  width: 120px;
+  background: chocolate;
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#inspection_and_removal .ins_rem_notes {
+  padding: 30px;
+  font-size: 17px;
+}
+#inspection_and_removal .ins_rem_notes .ins_rem_label {
+  font-weight: bold;
+}
+#inspection_and_removal .ins_rem_notes .ins_rem_output{
+  margin-top: 10px;
+  padding-left: 20px;
+}
