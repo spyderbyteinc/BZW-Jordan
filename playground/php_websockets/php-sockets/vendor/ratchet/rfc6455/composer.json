@@ -3,7 +3,7 @@
     "type": "library",
     "description": "RFC6455 WebSocket protocol handler",
     "keywords": ["WebSockets", "websocket", "RFC6455"],
-    "homepage": "http://socketo.me",
+    "homepage": "https://socketo.me",
     "license": "MIT",
     "authors": [
         {

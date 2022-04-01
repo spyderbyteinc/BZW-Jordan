@@ -30,7 +30,7 @@ class BinaryEcho implements \Ratchet\WebSocket\MessageComponentInterface {
     // This causes the Ratchet server to crash on test 2.7
     $wsServer->enableKeepAlive($loop, 600);
 
-    $app = new Ratchet\Http\HttpServer($wsServer);
+    $app = new Ratchet\Http\httperver($wsServer);
 
     $server = new Ratchet\Server\IoServer($app, $sock, $loop);
     $server->run();

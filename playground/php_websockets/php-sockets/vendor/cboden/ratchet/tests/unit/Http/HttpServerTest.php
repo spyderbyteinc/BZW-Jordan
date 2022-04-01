@@ -3,9 +3,9 @@ namespace Ratchet\Http;
 use Ratchet\AbstractMessageComponentTestCase;
 
 /**
- * @covers Ratchet\Http\HttpServer
+ * @covers Ratchet\Http\httperver
  */
-class HttpServerTest extends AbstractMessageComponentTestCase {
+class httperverTest extends AbstractMessageComponentTestCase {
     public function setUp() {
         parent::setUp();
         $this->_conn->httpHeadersReceived = true;
@@ -16,11 +16,11 @@ class HttpServerTest extends AbstractMessageComponentTestCase {
     }
 
     public function getDecoratorClassString() {
-        return '\Ratchet\Http\HttpServer';
+        return '\Ratchet\Http\httperver';
     }
 
     public function getComponentClassString() {
-        return '\Ratchet\Http\HttpServerInterface';
+        return '\Ratchet\Http\httperverInterface';
     }
 
     public function testOpen() {

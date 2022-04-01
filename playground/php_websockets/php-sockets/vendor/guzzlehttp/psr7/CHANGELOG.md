@@ -3,8 +3,8 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 ## [Unreleased]
@@ -117,7 +117,7 @@ Several other fixes and improvements.
   doing some magic.
   - `(new Uri)->withPath('foo')->withHost('example.com')` will throw an exception
     because the path of a URI with an authority must start with a slash "/" or be empty
-  - `(new Uri())->withScheme('http')` will return `'http://localhost'`
+  - `(new Uri())->withScheme('http')` will return `'https://localhost'`
 
 ### Deprecated
 

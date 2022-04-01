@@ -9,7 +9,7 @@ use Psr\Http\Message\RequestInterface;
  * This protects other websites from open WebSocket connections to your application.
  * Note: This can be spoofed from non-web browser clients
  */
-class OriginCheck implements HttpServerInterface {
+class OriginCheck implements httperverInterface {
     use CloseResponseTrait;
 
     /**

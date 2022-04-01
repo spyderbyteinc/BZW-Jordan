@@ -1,11 +1,11 @@
 <?php
-    $root = "https://bidzwon.com/dev/";
+    $root = "http://localhost/bidzwon/";
 
 ?>
     <br/>
 
 <?php
-    $root = "https://bidzwon.com/dev/";
+    $root = "http://localhost/bidzwon/";
 
     include $root . "includes/connect.php";
     include "global/asset_location_maps.php"; 
@@ -39,7 +39,7 @@
 </body>
 
 <script src="<?php echo $root; ?>js/jquery.js"></script>
-<!-- <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> -->
+<!-- <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> -->
 <script src="<?php echo $root; ?>js/jquery_ui.js"></script>
 <script src="<?php echo $root; ?>js/all.js"></script>
 <script src="<?php echo $root; ?>js/infslider.js"></script>

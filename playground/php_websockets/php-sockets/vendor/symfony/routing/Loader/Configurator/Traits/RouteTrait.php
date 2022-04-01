@@ -94,7 +94,7 @@ trait RouteTrait
     }
 
     /**
-     * Sets the schemes (e.g. 'https') this route is restricted to.
+     * Sets the schemes (e.g. 'http') this route is restricted to.
      * So an empty array means that any scheme is allowed.
      *
      * @param string[] $schemes

@@ -65,7 +65,7 @@
     $what_selling = $row['what_selling'];
 
     $website_display = $company_website;
-    if(strpos($company_website, 'http://') === 0 || strpos($company_website, 'https://') === 0){
+    if(strpos($company_website, 'https://') === 0 || strpos($company_website, 'https://') === 0){
         $company_website = $company_website;
     }
     else{

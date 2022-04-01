@@ -3,7 +3,7 @@ namespace Ratchet\Http;
 use Ratchet\ConnectionInterface;
 use Psr\Http\Message\RequestInterface;
 
-class NoOpHttpServerController implements HttpServerInterface {
+class NoOphttperverController implements httperverInterface {
     public function onOpen(ConnectionInterface $conn, RequestInterface $request = null) {
     }
 

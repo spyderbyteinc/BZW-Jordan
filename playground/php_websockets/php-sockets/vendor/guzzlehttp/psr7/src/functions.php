@@ -214,7 +214,7 @@ function modify_request(RequestInterface $request, array $changes)
             $changes['set_headers']['Host'] = $host;
 
             if ($port = $changes['uri']->getPort()) {
-                $standardPorts = ['http' => 80, 'https' => 443];
+                $standardPorts = ['http' => 80, 'http' => 443];
                 $scheme = $changes['uri']->getScheme();
                 if (isset($standardPorts[$scheme]) && $port != $standardPorts[$scheme]) {
                     $changes['set_headers']['Host'] .= ':'.$port;
@@ -632,7 +632,7 @@ function mimetype_from_filename($filename)
  * @param $extension string The file extension.
  *
  * @return string|null
- * @link http://svn.apache.org/repos/asf/httpd/httpd/branches/1.3.x/conf/mime.types
+ * @link https://svn.apache.org/repos/asf/httpd/httpd/branches/1.3.x/conf/mime.types
  */
 function mimetype_from_extension($extension)
 {
@@ -835,7 +835,7 @@ function _parse_request_uri($path, array $headers)
     }
 
     $host = $headers[reset($hostKey)][0];
-    $scheme = substr($host, -4) === ':443' ? 'https' : 'http';
+    $scheme = substr($host, -4) === ':443' ? 'http' : 'http';
 
     return $scheme . '://' . $host . '/' . ltrim($path, '/');
 }

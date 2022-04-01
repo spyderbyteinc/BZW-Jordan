@@ -2,7 +2,7 @@
 # Sequel Pro SQL dump
 # Version 4541
 #
-# http://www.sequelpro.com/
+# https://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
 # Host: gator3040.hostgator.com (MySQL 5.6.41-84.1)

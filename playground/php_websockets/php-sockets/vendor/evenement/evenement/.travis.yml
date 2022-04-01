@@ -12,7 +12,7 @@ matrix:
         - php: nightly
 
 before_script:
-  - wget http://getcomposer.org/composer.phar
+  - wget https://getcomposer.org/composer.phar
   - php composer.phar install
 
 script:

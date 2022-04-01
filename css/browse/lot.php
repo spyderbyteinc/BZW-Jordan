@@ -464,9 +464,9 @@
                             <span>Affiliations</span>
                         </div>
                         <div id="affiliations">
-                            <img src="http://bidzwon.com/dev/img/cube_pictures_test/3.png" alt="" class="aff">
-                            <img src="http://bidzwon.com/dev/img/cube_pictures_test/4.png" alt="" class="aff">
-                            <img src="http://bidzwon.com/dev/img/cube_pictures_test/7.png" alt="" class="aff">
+                            <img src="https://bidzwon.com/dev/img/cube_pictures_test/3.png" alt="" class="aff">
+                            <img src="https://bidzwon.com/dev/img/cube_pictures_test/4.png" alt="" class="aff">
+                            <img src="https://bidzwon.com/dev/img/cube_pictures_test/7.png" alt="" class="aff">
                         </div>
                     </div>
 

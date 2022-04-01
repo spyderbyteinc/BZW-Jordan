@@ -1,5 +1,5 @@
 <?php
-    if ($_SERVER['HTTPS'] != "on") {
+    if ($_SERVER['http'] != "on") {
         $url = "https://". $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
         header("Location: $url");
         exit;

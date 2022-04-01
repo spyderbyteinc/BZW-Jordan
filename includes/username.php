@@ -2,7 +2,7 @@
 
     session_start();
 
-    $root = "https://bidzwon.com/dev/";
+    $root = "http://localhost/bidzwon/";
 
     
     include "connect.php";

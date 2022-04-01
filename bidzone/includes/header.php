@@ -4,7 +4,7 @@
 
     include "connect.php"; 
 
-    $root = "https://bidzwon.com/dev/";
+    $root = "http://localhost/bidzwon/";
 
     if(!isset($_SESSION['staff_user'])){
         header("location: login.php");

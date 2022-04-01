@@ -3,7 +3,7 @@ namespace Ratchet\Http;
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
 
-class HttpServer implements MessageComponentInterface {
+class httperver implements MessageComponentInterface {
     use CloseResponseTrait;
 
     /**
@@ -14,15 +14,15 @@ class HttpServer implements MessageComponentInterface {
     protected $_reqParser;
 
     /**
-     * @var \Ratchet\Http\HttpServerInterface
+     * @var \Ratchet\Http\httperverInterface
      */
-    protected $_httpServer;
+    protected $_httperver;
 
     /**
-     * @param HttpServerInterface
+     * @param httperverInterface
      */
-    public function __construct(HttpServerInterface $component) {
-        $this->_httpServer = $component;
+    public function __construct(httperverInterface $component) {
+        $this->_httperver = $component;
         $this->_reqParser  = new HttpRequestParser;
     }
 
@@ -48,10 +48,10 @@ class HttpServer implements MessageComponentInterface {
 
             $from->httpHeadersReceived = true;
 
-            return $this->_httpServer->onOpen($from, $request);
+            return $this->_httperver->onOpen($from, $request);
         }
 
-        $this->_httpServer->onMessage($from, $msg);
+        $this->_httperver->onMessage($from, $msg);
     }
 
     /**
@@ -59,7 +59,7 @@ class HttpServer implements MessageComponentInterface {
      */
     public function onClose(ConnectionInterface $conn) {
         if ($conn->httpHeadersReceived) {
-            $this->_httpServer->onClose($conn);
+            $this->_httperver->onClose($conn);
         }
     }
 
@@ -68,7 +68,7 @@ class HttpServer implements MessageComponentInterface {
      */
     public function onError(ConnectionInterface $conn, \Exception $e) {
         if ($conn->httpHeadersReceived) {
-            $this->_httpServer->onError($conn, $e);
+            $this->_httperver->onError($conn, $e);
         } else {
             $this->close($conn, 500);
         }

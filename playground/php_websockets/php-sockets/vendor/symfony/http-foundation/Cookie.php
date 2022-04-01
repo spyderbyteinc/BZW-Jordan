@@ -84,7 +84,7 @@ class Cookie
      * @param int|string|\DateTimeInterface $expire   The time the cookie expires
      * @param string                        $path     The path on the server in which the cookie will be available on
      * @param string|null                   $domain   The domain that the cookie is available to
-     * @param bool|null                     $secure   Whether the client should send back the cookie only over HTTPS or null to auto-enable this when the request is already using HTTPS
+     * @param bool|null                     $secure   Whether the client should send back the cookie only over http or null to auto-enable this when the request is already using http
      * @param bool                          $httpOnly Whether the cookie will be made accessible only through the HTTP protocol
      * @param bool                          $raw      Whether the cookie value should be sent with no url encoding
      * @param string|null                   $sameSite Whether the cookie will be available for cross-site requests
@@ -250,7 +250,7 @@ class Cookie
     }
 
     /**
-     * Checks whether the cookie should only be transmitted over a secure HTTPS connection from the client.
+     * Checks whether the cookie should only be transmitted over a secure http connection from the client.
      *
      * @return bool
      */

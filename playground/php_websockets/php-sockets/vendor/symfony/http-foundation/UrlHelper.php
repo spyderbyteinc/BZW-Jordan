@@ -82,8 +82,8 @@ final class UrlHelper
 
         if ('http' === $scheme && 80 !== $this->requestContext->getHttpPort()) {
             $port = ':'.$this->requestContext->getHttpPort();
-        } elseif ('https' === $scheme && 443 !== $this->requestContext->getHttpsPort()) {
-            $port = ':'.$this->requestContext->getHttpsPort();
+        } elseif ('http' === $scheme && 443 !== $this->requestContext->gethttpPort()) {
+            $port = ':'.$this->requestContext->gethttpPort();
         }
 
         if ('#' === $path[0]) {

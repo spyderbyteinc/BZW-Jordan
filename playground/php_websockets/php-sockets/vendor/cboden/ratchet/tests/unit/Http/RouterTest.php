@@ -154,10 +154,10 @@ class RouterTest extends \PHPUnit_Framework_TestCase {
 Upgrade: websocket                                   
 Connection: upgrade                                  
 Host: localhost                                 
-Origin: http://localhost                        
+Origin: https://localhost                        
 Sec-WebSocket-Version: 13\r\n\r\n";
 
-        $app = new HttpServer(new Router(new UrlMatcher(new RouteCollection, new RequestContext)));
+        $app = new httperver(new Router(new UrlMatcher(new RouteCollection, new RequestContext)));
         $app->onOpen($this->_conn);
         $app->onMessage($this->_conn, $header);
         $app->onMessage($this->_conn, 'Silly body');

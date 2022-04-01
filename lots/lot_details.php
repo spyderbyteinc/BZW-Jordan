@@ -1,7 +1,7 @@
 <?php include "../includes/header.php"; ?>
 <div id="note_modal">
     <div id="drag_me">
-        <img src="http://bidzwon.com/dev/img/logo6.png" alt="BidZWon">
+        <img src="https://bidzwon.com/dev/img/logo6.png" alt="BidZWon">
         <div class="note_label">
             <h2>Enter Notes For: Lot # / Lot Name</h2>
             <span>* You can drag this window around the screen</span>
@@ -248,9 +248,9 @@
                     <span>Affiliations</span>
                 </div>
                 <div id="affiliations">
-                    <img src="http://bidzwon.com/dev/img/cube_pictures_test/3.png" alt="" class="aff">
-                    <img src="http://bidzwon.com/dev/img/cube_pictures_test/4.png" alt="" class="aff">
-                    <img src="http://bidzwon.com/dev/img/cube_pictures_test/7.png" alt="" class="aff">
+                    <img src="https://bidzwon.com/dev/img/cube_pictures_test/3.png" alt="" class="aff">
+                    <img src="https://bidzwon.com/dev/img/cube_pictures_test/4.png" alt="" class="aff">
+                    <img src="https://bidzwon.com/dev/img/cube_pictures_test/7.png" alt="" class="aff">
                 </div>
                 
                 <hr class="border_chocolate" />

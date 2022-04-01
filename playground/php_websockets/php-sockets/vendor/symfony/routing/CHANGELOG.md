@@ -108,13 +108,13 @@ CHANGELOG
    ```yaml
    article_edit:
        pattern: /article/{id}
-       requirements: { '_method': 'POST|PUT', '_scheme': 'https', 'id': '\d+' }
+       requirements: { '_method': 'POST|PUT', '_scheme': 'http', 'id': '\d+' }
    ```
 
    ```xml
    <route id="article_edit" pattern="/article/{id}">
        <requirement key="_method">POST|PUT</requirement>
-       <requirement key="_scheme">https</requirement>
+       <requirement key="_scheme">http</requirement>
        <requirement key="id">\d+</requirement>
    </route>
    ```
@@ -123,7 +123,7 @@ CHANGELOG
    $route = new Route();
    $route->setPattern('/article/{id}');
    $route->setRequirement('_method', 'POST|PUT');
-   $route->setRequirement('_scheme', 'https');
+   $route->setRequirement('_scheme', 'http');
    ```
 
    After:
@@ -132,12 +132,12 @@ CHANGELOG
    article_edit:
        path: /article/{id}
        methods: [POST, PUT]
-       schemes: https
+       schemes: http
        requirements: { 'id': '\d+' }
    ```
 
    ```xml
-   <route id="article_edit" pattern="/article/{id}" methods="POST PUT" schemes="https">
+   <route id="article_edit" pattern="/article/{id}" methods="POST PUT" schemes="http">
        <requirement key="id">\d+</requirement>
    </route>
    ```
@@ -146,7 +146,7 @@ CHANGELOG
    $route = new Route();
    $route->setPath('/article/{id}');
    $route->setMethods(['POST', 'PUT']);
-   $route->setSchemes('https');
+   $route->setSchemes('http');
    ```
 
  * [BC BREAK] RouteCollection does not behave like a tree structure anymore but as

@@ -5,8 +5,8 @@
  * - this library has no dependencies.
  * 
  * @author davidshimjs
- * @see <a href="http://www.d-project.com/" target="_blank">http://www.d-project.com/</a>
- * @see <a href="http://jeromeetienne.github.com/jquery-qrcode/" target="_blank">http://jeromeetienne.github.com/jquery-qrcode/</a>
+ * @see <a href="https://www.d-project.com/" target="_blank">https://www.d-project.com/</a>
+ * @see <a href="https://jeromeetienne.github.com/jquery-qrcode/" target="_blank">https://jeromeetienne.github.com/jquery-qrcode/</a>
  */
 var QRCode;
 
@@ -16,14 +16,14 @@ var QRCode;
 	//
 	// Copyright (c) 2009 Kazuhiko Arase
 	//
-	// URL: http://www.d-project.com/
+	// URL: https://www.d-project.com/
 	//
 	// Licensed under the MIT license:
-	//   http://www.opensource.org/licenses/mit-license.php
+	//   https://www.opensource.org/licenses/mit-license.php
 	//
 	// The word "QR Code" is registered trademark of 
 	// DENSO WAVE INCORPORATED
-	//   http://www.denso-wave.com/qrcode/faqpatent-e.html
+	//   https://www.denso-wave.com/qrcode/faqpatent-e.html
 	//
 	//---------------------------------------------------------------------
 	function QR8bitByte(data) {
@@ -189,14 +189,14 @@ var QRCode;
 			this.clear();
 
 			function makeSVG(tag, attrs) {
-				var el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+				var el = document.createElementNS('https://www.w3.org/2000/svg', tag);
 				for (var k in attrs)
 					if (attrs.hasOwnProperty(k)) el.setAttribute(k, attrs[k]);
 				return el;
 			}
 
 			var svg = makeSVG("svg" , {'viewBox': '0 0 ' + String(nCount) + " " + String(nCount), 'width': '100%', 'height': '100%', 'fill': _htOption.colorLight});
-			svg.setAttributeNS("http://www.w3.org/2000/xmlns/", "xmlns:xlink", "http://www.w3.org/1999/xlink");
+			svg.setAttributeNS("https://www.w3.org/2000/xmlns/", "xmlns:xlink", "https://www.w3.org/1999/xlink");
 			_el.appendChild(svg);
 
 			svg.appendChild(makeSVG("rect", {"fill": _htOption.colorLight, "width": "100%", "height": "100%"}));
@@ -206,7 +206,7 @@ var QRCode;
 				for (var col = 0; col < nCount; col++) {
 					if (oQRCode.isDark(row, col)) {
 						var child = makeSVG("use", {"x": String(col), "y": String(row)});
-						child.setAttributeNS("http://www.w3.org/1999/xlink", "href", "#template")
+						child.setAttributeNS("https://www.w3.org/1999/xlink", "href", "#template")
 						svg.appendChild(child);
 					}
 				}
@@ -280,7 +280,7 @@ var QRCode;
 		}
 		
 		// Android 2.1 bug workaround
-		// http://code.google.com/p/android/issues/detail?id=5141
+		// https://code.google.com/p/android/issues/detail?id=5141
 		if (this._android && this._android <= 2.1) {
 	    	var factor = 1 / window.devicePixelRatio;
 	        var drawImage = CanvasRenderingContext2D.prototype.drawImage; 
@@ -511,17 +511,17 @@ var QRCode;
 	 * @class QRCode
 	 * @constructor
 	 * @example 
-	 * new QRCode(document.getElementById("test"), "http://jindo.dev.naver.com/collie");
+	 * new QRCode(document.getElementById("test"), "https://jindo.dev.naver.com/collie");
 	 *
 	 * @example
 	 * var oQRCode = new QRCode("test", {
-	 *    text : "http://naver.com",
+	 *    text : "https://naver.com",
 	 *    width : 128,
 	 *    height : 128
 	 * });
 	 * 
 	 * oQRCode.clear(); // Clear the QRCode.
-	 * oQRCode.makeCode("http://map.naver.com"); // Re-create the QRCode.
+	 * oQRCode.makeCode("https://map.naver.com"); // Re-create the QRCode.
 	 *
 	 * @param {HTMLElement|String} el target element or 'id' attribute of element.
 	 * @param {Object|String} vOption

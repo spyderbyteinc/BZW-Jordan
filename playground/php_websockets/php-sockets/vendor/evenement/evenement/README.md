@@ -2,18 +2,18 @@
 
 Événement is a very simple event dispatching library for PHP.
 
-It has the same design goals as [Silex](http://silex-project.org) and
-[Pimple](http://pimple-project.org), to empower the user while staying concise
+It has the same design goals as [Silex](https://silex-project.org) and
+[Pimple](https://pimple-project.org), to empower the user while staying concise
 and simple.
 
 It is very strongly inspired by the EventEmitter API found in
-[node.js](http://nodejs.org).
+[node.js](https://nodejs.org).
 
-[![Build Status](https://secure.travis-ci.org/igorw/evenement.png?branch=master)](http://travis-ci.org/igorw/evenement)
+[![Build Status](https://secure.travis-ci.org/igorw/evenement.png?branch=master)](https://travis-ci.org/igorw/evenement)
 
 ## Fetch
 
-The recommended way to install Événement is [through composer](http://getcomposer.org).
+The recommended way to install Événement is [through composer](https://getcomposer.org).
 
 Just create a composer.json file for your project:
 
@@ -38,7 +38,7 @@ using PHP 5.3, please use the `1.x` version:
 
 And run these two commands to install it:
 
-    $ curl -s http://getcomposer.org/installer | php
+    $ curl -s https://getcomposer.org/installer | php
     $ php composer.phar install
 
 Now you can add the autoloader, and you will have access to the library:

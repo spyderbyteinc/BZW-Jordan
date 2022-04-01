@@ -23,7 +23,7 @@ if(isset($_GET['forgotten'])){
         <div id="auctioneer_scroll_area">
             <ul id="scroller">
                 <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" height="60px"></li>
-                <li><img src="http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2r0Th?ver=5b7d" height="60px"></li>
+                <li><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2r0Th?ver=5b7d" height="60px"></li>
                 <li><img src="https://www.wyattresearch.com/wp-content/uploads/2015/01/6_logo_predesign.jpg"  height="60px"></li>
                 <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Facebook_New_Logo_%282015%29.svg/1280px-Facebook_New_Logo_%282015%29.svg.png" height="60px"></li>
                 <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Time_Magazine_logo.svg/1280px-Time_Magazine_logo.svg.png" height="60px"></li>

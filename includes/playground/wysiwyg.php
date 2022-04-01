@@ -77,7 +77,7 @@
 <body>
 
         <div id="drag_me">
-            <img src="http://bidzwon.com/dev/img/logo6.png" alt="BidZWon">
+            <img src="https://bidzwon.com/dev/img/logo6.png" alt="BidZWon">
             <div class="note_label">
                 <h2>Enter Notes For: Lot # / Lot Name</h2>
             </div>
@@ -97,7 +97,7 @@
         </div>
 </body>
 </html>
-<script src="http://code.jquery.com/jquery-3.4.1.min.js"
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>

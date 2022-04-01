@@ -654,7 +654,7 @@
         if (!preg_match("~^(?:f|ht)tps?://~i", $company_website)) {
                 
             // If not exist then add http
-            $company_website = "http://" . $company_website;
+            $company_website = "https://" . $company_website;
         }
         
         $affiliation1 = $seller_row['affiliation1'];
@@ -708,9 +708,9 @@
                             <span class="affiliation"><?php echo $affiliation1; ?></span>
                             <span class="affiliation"><?php echo $affiliation2; ?></span>
                             <span class="affiliation"><?php echo $affiliation3; ?></span>
-                            <!-- <img src="http://bidzwon.com/dev/img/cube_pictures_test/3.png" alt="" class="aff">
-                            <img src="http://bidzwon.com/dev/img/cube_pictures_test/4.png" alt="" class="aff">
-                            <img src="http://bidzwon.com/dev/img/cube_pictures_test/7.png" alt="" class="aff"> -->
+                            <!-- <img src="https://bidzwon.com/dev/img/cube_pictures_test/3.png" alt="" class="aff">
+                            <img src="https://bidzwon.com/dev/img/cube_pictures_test/4.png" alt="" class="aff">
+                            <img src="https://bidzwon.com/dev/img/cube_pictures_test/7.png" alt="" class="aff"> -->
                         </div>
                     </div>
 

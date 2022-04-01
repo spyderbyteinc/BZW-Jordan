@@ -24,7 +24,7 @@ class WampConnectionTest extends \PHPUnit_Framework_TestCase {
 
     public function testCallError() {
         $callId = uniqid();
-        $uri    = 'http://example.com/end/point';
+        $uri    = 'https://example.com/end/point';
 
         $this->mock->expects($this->once())->method('send')->with(json_encode(array(4, $callId, $uri, '')));
 
@@ -33,7 +33,7 @@ class WampConnectionTest extends \PHPUnit_Framework_TestCase {
 
     public function testCallErrorWithTopic() {
         $callId = uniqid();
-        $uri    = 'http://example.com/end/point';
+        $uri    = 'https://example.com/end/point';
 
         $this->mock->expects($this->once())->method('send')->with(json_encode(array(4, $callId, $uri, '')));
 
@@ -42,7 +42,7 @@ class WampConnectionTest extends \PHPUnit_Framework_TestCase {
 
     public function testDetailedCallError() {
         $callId = uniqid();
-        $uri    = 'http://example.com/end/point';
+        $uri    = 'https://example.com/end/point';
         $desc   = 'beep boop beep';
         $detail = 'Error: Too much awesome';
 
@@ -53,7 +53,7 @@ class WampConnectionTest extends \PHPUnit_Framework_TestCase {
 
     public function testPrefix() {
         $shortOut = 'outgoing';
-        $longOut  = 'http://example.com/outgoing';
+        $longOut  = 'https://example.com/outgoing';
 
         $this->mock->expects($this->once())->method('send')->with(json_encode(array(1, $shortOut, $longOut)));
 
@@ -61,7 +61,7 @@ class WampConnectionTest extends \PHPUnit_Framework_TestCase {
     }
 
     public function testGetUriWhenNoCurieGiven() {
-        $uri  = 'http://example.com/noshort';
+        $uri  = 'https://example.com/noshort';
 
         $this->assertEquals($uri, $this->conn->getUri($uri));
     }

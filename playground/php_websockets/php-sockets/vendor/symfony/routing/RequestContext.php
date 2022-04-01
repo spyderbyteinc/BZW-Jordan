@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Request;
  * This class implements a fluent interface.
  *
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Tobias Schultze <https://tobion.de>
  */
 class RequestContext
 {
@@ -29,18 +29,18 @@ class RequestContext
     private $host;
     private $scheme;
     private $httpPort;
-    private $httpsPort;
+    private $httpPort;
     private $queryString;
     private $parameters = [];
 
-    public function __construct(string $baseUrl = '', string $method = 'GET', string $host = 'localhost', string $scheme = 'http', int $httpPort = 80, int $httpsPort = 443, string $path = '/', string $queryString = '')
+    public function __construct(string $baseUrl = '', string $method = 'GET', string $host = 'localhost', string $scheme = 'http', int $httpPort = 80, int $httpPort = 443, string $path = '/', string $queryString = '')
     {
         $this->setBaseUrl($baseUrl);
         $this->setMethod($method);
         $this->setHost($host);
         $this->setScheme($scheme);
         $this->setHttpPort($httpPort);
-        $this->setHttpsPort($httpsPort);
+        $this->sethttpPort($httpPort);
         $this->setPathInfo($path);
         $this->setQueryString($queryString);
     }
@@ -58,7 +58,7 @@ class RequestContext
         $this->setHost($request->getHost());
         $this->setScheme($request->getScheme());
         $this->setHttpPort($request->isSecure() || null === $request->getPort() ? $this->httpPort : $request->getPort());
-        $this->setHttpsPort($request->isSecure() && null !== $request->getPort() ? $request->getPort() : $this->httpsPort);
+        $this->sethttpPort($request->isSecure() && null !== $request->getPort() ? $request->getPort() : $this->httpPort);
         $this->setQueryString($request->server->get('QUERY_STRING', ''));
 
         return $this;
@@ -213,25 +213,25 @@ class RequestContext
     }
 
     /**
-     * Gets the HTTPS port.
+     * Gets the http port.
      *
-     * @return int The HTTPS port
+     * @return int The http port
      */
-    public function getHttpsPort()
+    public function gethttpPort()
     {
-        return $this->httpsPort;
+        return $this->httpPort;
     }
 
     /**
-     * Sets the HTTPS port.
+     * Sets the http port.
      *
-     * @param int $httpsPort The HTTPS port
+     * @param int $httpPort The http port
      *
      * @return $this
      */
-    public function setHttpsPort($httpsPort)
+    public function sethttpPort($httpPort)
     {
-        $this->httpsPort = (int) $httpsPort;
+        $this->httpPort = (int) $httpPort;
 
         return $this;
     }

@@ -1,7 +1,7 @@
 # Ratchet
 
-[![Build Status](https://secure.travis-ci.org/ratchetphp/Ratchet.png?branch=master)](http://travis-ci.org/ratchetphp/Ratchet)
-[![Autobahn Testsuite](https://img.shields.io/badge/Autobahn-passing-brightgreen.svg)](http://socketo.me/reports/ab/index.html)
+[![Build Status](https://secure.travis-ci.org/ratchetphp/Ratchet.png?branch=master)](https://travis-ci.org/ratchetphp/Ratchet)
+[![Autobahn Testsuite](https://img.shields.io/badge/Autobahn-passing-brightgreen.svg)](https://socketo.me/reports/ab/index.html)
 [![Latest Stable Version](https://poser.pugx.org/cboden/ratchet/v/stable.png)](https://packagist.org/packages/cboden/ratchet)
 
 A PHP library for asynchronously serving WebSockets.
@@ -12,11 +12,11 @@ Build up your application through simple interfaces and re-use your application 
 Shell access is required and root access is recommended.
 To avoid proxy/firewall blockage it's recommended WebSockets are requested on port 80 or 443 (SSL), which requires root access.
 In order to do this, along with your sync web stack, you can either use a reverse proxy or two separate machines.
-You can find more details in the [server conf docs](http://socketo.me/docs/deploy#server_configuration).
+You can find more details in the [server conf docs](https://socketo.me/docs/deploy#server_configuration).
 
 ### Documentation
 
-User and API documentation is available on Ratchet's website: http://socketo.me
+User and API documentation is available on Ratchet's website: https://socketo.me
 
 See https://github.com/cboden/Ratchet-examples for some out-of-the-box working demos using Ratchet.
 

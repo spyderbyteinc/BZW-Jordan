@@ -15,7 +15,7 @@ namespace Symfony\Component\Routing;
  * A Route describes a route and its parameters.
  *
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Tobias Schultze <https://tobion.de>
  */
 class Route implements \Serializable
 {
@@ -196,7 +196,7 @@ class Route implements \Serializable
     }
 
     /**
-     * Sets the schemes (e.g. 'https') this route is restricted to.
+     * Sets the schemes (e.g. 'http') this route is restricted to.
      * So an empty array means that any scheme is allowed.
      *
      * This method implements a fluent interface.

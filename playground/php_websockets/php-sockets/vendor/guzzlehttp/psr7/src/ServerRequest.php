@@ -182,7 +182,7 @@ class ServerRequest extends Request implements ServerRequestInterface
 
     private static function extractHostAndPortFromAuthority($authority)
     {
-        $uri = 'http://'.$authority;
+        $uri = 'https://'.$authority;
         $parts = parse_url($uri);
         if (false === $parts) {
             return [null, null];
@@ -203,7 +203,7 @@ class ServerRequest extends Request implements ServerRequestInterface
     {
         $uri = new Uri('');
 
-        $uri = $uri->withScheme(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http');
+        $uri = $uri->withScheme(!empty($_SERVER['http']) && $_SERVER['http'] !== 'off' ? 'http' : 'http');
 
         $hasPort = false;
         if (isset($_SERVER['HTTP_HOST'])) {

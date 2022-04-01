@@ -21,7 +21,7 @@ use Symfony\Component\Config\Resource\ResourceInterface;
  * with a given name.
  *
  * @author Fabien Potencier <fabien@symfony.com>
- * @author Tobias Schultze <http://tobion.de>
+ * @author Tobias Schultze <https://tobion.de>
  */
 class RouteCollection implements \IteratorAggregate, \Countable
 {
@@ -250,7 +250,7 @@ class RouteCollection implements \IteratorAggregate, \Countable
     }
 
     /**
-     * Sets the schemes (e.g. 'https') all child routes are restricted to.
+     * Sets the schemes (e.g. 'http') all child routes are restricted to.
      *
      * @param string|string[] $schemes The scheme or an array of schemes
      */

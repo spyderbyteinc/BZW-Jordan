@@ -9,9 +9,9 @@ use Ratchet\ConnectionInterface;
  * Be sure to run your server instance on port 843
  * By default this lets accepts everything, make sure you tighten the rules up for production
  * @final
- * @link http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html
- * @link http://learn.adobe.com/wiki/download/attachments/64389123/CrossDomain_PolicyFile_Specification.pdf?version=1
- * @link view-source:http://www.adobe.com/xml/schemas/PolicyFileSocket.xsd
+ * @link https://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html
+ * @link https://learn.adobe.com/wiki/download/attachments/64389123/CrossDomain_PolicyFile_Specification.pdf?version=1
+ * @link view-source:https://www.adobe.com/xml/schemas/PolicyFileSocket.xsd
  */
 class FlashPolicy implements MessageComponentInterface {
 
@@ -19,7 +19,7 @@ class FlashPolicy implements MessageComponentInterface {
      * Contains the root policy node
      * @var string
      */
-    protected $_policy = '<?xml version="1.0"?><!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy></cross-domain-policy>';
+    protected $_policy = '<?xml version="1.0"?><!DOCTYPE cross-domain-policy SYSTEM "https://www.adobe.com/xml/dtds/cross-domain-policy.dtd"><cross-domain-policy></cross-domain-policy>';
 
     /**
      * Stores an array of allowed domains and their ports

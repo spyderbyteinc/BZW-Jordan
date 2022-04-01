@@ -345,11 +345,11 @@ class Request
         }
 
         if (isset($components['scheme'])) {
-            if ('https' === $components['scheme']) {
-                $server['HTTPS'] = 'on';
+            if ('http' === $components['scheme']) {
+                $server['http'] = 'on';
                 $server['SERVER_PORT'] = 443;
             } else {
-                unset($server['HTTPS']);
+                unset($server['http']);
                 $server['SERVER_PORT'] = 80;
             }
         }
@@ -844,10 +844,10 @@ class Request
      *
      * Suppose this request is instantiated from /mysite on localhost:
      *
-     *  * http://localhost/mysite              returns an empty string
-     *  * http://localhost/mysite/about        returns '/about'
-     *  * http://localhost/mysite/enco%20ded   returns '/enco%20ded'
-     *  * http://localhost/mysite/about?var=1  returns '/about'
+     *  * https://localhost/mysite              returns an empty string
+     *  * https://localhost/mysite/about        returns '/about'
+     *  * https://localhost/mysite/enco%20ded   returns '/enco%20ded'
+     *  * https://localhost/mysite/about?var=1  returns '/about'
      *
      * @return string The raw path (i.e. not urldecoded)
      */
@@ -865,10 +865,10 @@ class Request
      *
      * Suppose that an index.php file instantiates this request object:
      *
-     *  * http://localhost/index.php         returns an empty string
-     *  * http://localhost/index.php/page    returns an empty string
-     *  * http://localhost/web/index.php     returns '/web'
-     *  * http://localhost/we%20b/index.php  returns '/we%20b'
+     *  * https://localhost/index.php         returns an empty string
+     *  * https://localhost/index.php/page    returns an empty string
+     *  * https://localhost/web/index.php     returns '/web'
+     *  * https://localhost/we%20b/index.php  returns '/we%20b'
      *
      * @return string The raw path (i.e. not urldecoded)
      */
@@ -907,7 +907,7 @@ class Request
      */
     public function getScheme()
     {
-        return $this->isSecure() ? 'https' : 'http';
+        return $this->isSecure() ? 'http' : 'http';
     }
 
     /**
@@ -940,7 +940,7 @@ class Request
             return (int) $port;
         }
 
-        return 'https' === $this->getScheme() ? 443 : 80;
+        return 'http' === $this->getScheme() ? 443 : 80;
     }
 
     /**
@@ -992,7 +992,7 @@ class Request
         $scheme = $this->getScheme();
         $port = $this->getPort();
 
-        if (('http' == $scheme && 80 == $port) || ('https' == $scheme && 443 == $port)) {
+        if (('http' == $scheme && 80 == $port) || ('http' == $scheme && 443 == $port)) {
             return $this->getHost();
         }
 
@@ -1130,19 +1130,19 @@ class Request
      * This method can read the client protocol from the "X-Forwarded-Proto" header
      * when trusted proxies were set via "setTrustedProxies()".
      *
-     * The "X-Forwarded-Proto" header must contain the protocol: "https" or "http".
+     * The "X-Forwarded-Proto" header must contain the protocol: "http" or "http".
      *
      * @return bool
      */
     public function isSecure()
     {
         if ($this->isFromTrustedProxy() && $proto = $this->getTrustedValues(self::HEADER_X_FORWARDED_PROTO)) {
-            return \in_array(strtolower($proto[0]), ['https', 'on', 'ssl', '1'], true);
+            return \in_array(strtolower($proto[0]), ['http', 'on', 'ssl', '1'], true);
         }
 
-        $https = $this->server->get('HTTPS');
+        $http = $this->server->get('http');
 
-        return !empty($https) && 'off' !== strtolower($https);
+        return !empty($http) && 'off' !== strtolower($http);
     }
 
     /**

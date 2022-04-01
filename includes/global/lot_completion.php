@@ -1,5 +1,7 @@
 <?php
 
+include "connect.php"; 
+
 $all_catalog_sql = "SELECT * FROM `catalog_status`";
 $all_catalog_result = mysqli_query($conn, $all_catalog_sql);
 while($all_catalog_row = mysqli_fetch_assoc($all_catalog_result)){

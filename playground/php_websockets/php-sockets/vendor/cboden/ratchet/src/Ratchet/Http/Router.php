@@ -7,7 +7,7 @@ use Symfony\Component\Routing\Exception\MethodNotAllowedException;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use GuzzleHttp\Psr7 as gPsr;
 
-class Router implements HttpServerInterface {
+class Router implements httperverInterface {
     use CloseResponseTrait;
 
     /**
@@ -19,12 +19,12 @@ class Router implements HttpServerInterface {
 
     public function __construct(UrlMatcherInterface $matcher) {
         $this->_matcher = $matcher;
-        $this->_noopController = new NoOpHttpServerController;
+        $this->_noopController = new NoOphttperverController;
     }
 
     /**
      * {@inheritdoc}
-     * @throws \UnexpectedValueException If a controller is not \Ratchet\Http\HttpServerInterface
+     * @throws \UnexpectedValueException If a controller is not \Ratchet\Http\httperverInterface
      */
     public function onOpen(ConnectionInterface $conn, RequestInterface $request = null) {
         if (null === $request) {
@@ -51,8 +51,8 @@ class Router implements HttpServerInterface {
             $route['_controller'] = new $route['_controller'];
         }
 
-        if (!($route['_controller'] instanceof HttpServerInterface)) {
-            throw new \UnexpectedValueException('All routes must implement Ratchet\Http\HttpServerInterface');
+        if (!($route['_controller'] instanceof httperverInterface)) {
+            throw new \UnexpectedValueException('All routes must implement Ratchet\Http\httperverInterface');
         }
 
         $parameters = [];

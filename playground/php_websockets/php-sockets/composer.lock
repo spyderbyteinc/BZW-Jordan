@@ -53,7 +53,7 @@
                 }
             ],
             "description": "PHP WebSocket library",
-            "homepage": "http://socketo.me",
+            "homepage": "https://socketo.me",
             "keywords": [
                 "Ratchet",
                 "WebSockets",
@@ -257,7 +257,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for HTTP messages",
@@ -356,7 +356,7 @@
                 }
             ],
             "description": "RFC6455 WebSocket protocol handler",
-            "homepage": "http://socketo.me",
+            "homepage": "https://socketo.me",
             "keywords": [
                 "WebSockets",
                 "rfc6455",

@@ -3,7 +3,7 @@
   , "type": "library"
   , "description": "PHP WebSocket library"
   , "keywords": ["WebSockets", "Server", "Ratchet", "Sockets", "WebSocket"]
-  , "homepage": "http://socketo.me"
+  , "homepage": "https://socketo.me"
   , "license": "MIT"
   , "authors": [
         {

@@ -32,7 +32,7 @@ class SessionProviderTest extends AbstractMessageComponentTestCase {
     }
 
     public function getComponentClassString() {
-        return '\Ratchet\Http\HttpServerInterface';
+        return '\Ratchet\Http\httperverInterface';
     }
 
     public function classCaseProvider() {

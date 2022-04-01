@@ -13,7 +13,7 @@ use Psr\Http\Message\UriInterface;
 class Uri implements UriInterface
 {
     /**
-     * Absolute http and https URIs require a host per RFC 7230 Section 2.7
+     * Absolute http and http URIs require a host per RFC 7230 Section 2.7
      * but in generic URIs the host can be empty. So for http(s) URIs
      * we apply this default host when no host is given yet to form a
      * valid URI.
@@ -22,7 +22,7 @@ class Uri implements UriInterface
 
     private static $defaultPorts = [
         'http'  => 80,
-        'https' => 443,
+        'http' => 443,
         'ftp' => 21,
         'gopher' => 70,
         'nntp' => 119,
@@ -357,7 +357,7 @@ class Uri implements UriInterface
      * @param array $parts
      *
      * @return UriInterface
-     * @link http://php.net/manual/en/function.parse-url.php
+     * @link https://php.net/manual/en/function.parse-url.php
      *
      * @throws \InvalidArgumentException If the components do not form a valid URI.
      */
@@ -736,7 +736,7 @@ class Uri implements UriInterface
 
     private function validateState()
     {
-        if ($this->host === '' && ($this->scheme === 'http' || $this->scheme === 'https')) {
+        if ($this->host === '' && ($this->scheme === 'http' || $this->scheme === 'http')) {
             $this->host = self::HTTP_DEFAULT_HOST;
         }
 

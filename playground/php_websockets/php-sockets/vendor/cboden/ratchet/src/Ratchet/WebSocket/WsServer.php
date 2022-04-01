@@ -3,7 +3,7 @@ namespace Ratchet\WebSocket;
 use Ratchet\ComponentInterface;
 use Ratchet\ConnectionInterface;
 use Ratchet\MessageComponentInterface as DataComponentInterface;
-use Ratchet\Http\HttpServerInterface;
+use Ratchet\Http\httperverInterface;
 use Ratchet\Http\CloseResponseTrait;
 use Psr\Http\Message\RequestInterface;
 use Ratchet\RFC6455\Messaging\MessageInterface;
@@ -19,10 +19,10 @@ use GuzzleHttp\Psr7 as gPsr;
 /**
  * The adapter to handle WebSocket requests/responses
  * This is a mediator between the Server and your application to handle real-time messaging through a web browser
- * @link http://ca.php.net/manual/en/ref.http.php
- * @link http://dev.w3.org/html5/websockets/
+ * @link https://ca.php.net/manual/en/ref.http.php
+ * @link https://dev.w3.org/html5/websockets/
  */
-class WsServer implements HttpServerInterface {
+class WsServer implements httperverInterface {
     use CloseResponseTrait;
 
     /**

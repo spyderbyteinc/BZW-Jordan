@@ -4,12 +4,12 @@ use React\EventLoop\LoopInterface;
 use React\EventLoop\Factory as LoopFactory;
 use React\Socket\Server as Reactor;
 use React\Socket\SecureServer as SecureReactor;
-use Ratchet\Http\HttpServerInterface;
+use Ratchet\Http\httperverInterface;
 use Ratchet\Http\OriginCheck;
 use Ratchet\Wamp\WampServerInterface;
 use Ratchet\Server\IoServer;
 use Ratchet\Server\FlashPolicy;
-use Ratchet\Http\HttpServer;
+use Ratchet\Http\httperver;
 use Ratchet\Http\Router;
 use Ratchet\WebSocket\MessageComponentInterface as WsMessageComponentInterface;
 use Ratchet\WebSocket\WsServer;
@@ -77,7 +77,7 @@ class App {
         $socket = new Reactor($address . ':' . $port, $loop);
 
         $this->routes  = new RouteCollection;
-        $this->_server = new IoServer(new HttpServer(new Router(new UrlMatcher($this->routes, new RequestContext))), $socket, $loop);
+        $this->_server = new IoServer(new httperver(new Router(new UrlMatcher($this->routes, new RequestContext))), $socket, $loop);
 
         $policy = new FlashPolicy;
         $policy->addAllowedAccess($httpHost, 80);
@@ -101,7 +101,7 @@ class App {
      * @return ComponentInterface|WsServer
      */
     public function route($path, ComponentInterface $controller, array $allowedOrigins = array(), $httpHost = null) {
-        if ($controller instanceof HttpServerInterface || $controller instanceof WsServer) {
+        if ($controller instanceof httperverInterface || $controller instanceof WsServer) {
             $decorated = $controller;
         } elseif ($controller instanceof WampServerInterface) {
             $decorated = new WsServer(new WampServer($controller));

@@ -3,23 +3,23 @@
 
 
 
-    if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
-        $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        header('HTTP/1.1 301 Moved Permanently');
-        header('Location: ' . $location);
-        exit;
-    }
+    // if (empty($_SERVER['http']) || $_SERVER['http'] === "off") {
+    //     $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    //     header('HTTP/1.1 301 Moved Permanently');
+    //     header('Location: ' . $location);
+    //     exit;
+    // }
     
-    $root = "https://bidzwon.com/dev/";
+    $root = "http://localhost/bidzwon/";
 
     include "connect.php";
 
 
-    include "global/helper_functions.php";
-    include "global/catalog_status.php";
-    include "global/lot_status.php";
-    include "global/catalog_countdown.php";
-    include "global/lot_completion.php";
+    include "global/helper_functions.php"; 
+    include "global/catalog_status.php"; 
+    include "global/lot_status.php"; 
+    include "global/catalog_countdown.php"; 
+    include "global/lot_completion.php"; 
 
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/dev/helpers/date_conversion.php";
@@ -135,7 +135,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
     
-    <link href="http://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link href="https://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
 
     <!-- <link rel="stylesheet" href="<?php echo $root; ?>css/datepicker.min.css"> -->
     <link rel="stylesheet" href="<?php echo $root; ?>css/sortable.css">
@@ -344,4 +344,4 @@
             </div>
         <?php endif ; ?>
     </header>
-<script src="<?php echo $root; ?>js/validators/login.js"></script>
+<script src="<?php echo $root; ?>js/validators/login.js"></script> -->

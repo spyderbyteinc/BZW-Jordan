@@ -1,8 +1,8 @@
 <?php
-$servername = "gator3040.hostgator.com";
-$user = "jhalaby_bidz";
-$password = "nadroJnadroJ99!";
-$db = "jhalaby_bidzwon";
+$servername = "localhost";
+$user = "root";
+$password = "";
+$db = "bidzwon";
 
 // Create connection
 $conn = new mysqli($servername, $user, $password);

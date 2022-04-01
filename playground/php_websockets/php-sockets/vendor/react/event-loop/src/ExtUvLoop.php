@@ -220,7 +220,7 @@ final class ExtUvLoop implements LoopInterface
 
             // Use UV::RUN_ONCE when there are only I/O events active in the loop and block until one of those triggers,
             // otherwise use UV::RUN_NOWAIT.
-            // @link http://docs.libuv.org/en/v1.x/loop.html#c.uv_run
+            // @link https://docs.libuv.org/en/v1.x/loop.html#c.uv_run
             $flags = \UV::RUN_ONCE;
             if ($wasJustStopped || $hasPendingCallbacks) {
                 $flags = \UV::RUN_NOWAIT;

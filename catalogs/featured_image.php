@@ -94,7 +94,7 @@
     <h2 class="house_heading section_heading"><span>Featured Picture - For Catalog: <?php echo $catalog_name; ?></span></h2>
 
     <div class="create_button_container">
-        <a href="http://bidzwon.com/dev/catalogs/manage.php" class="no_margin mb-30 bidzbutton orange create_button"><i class="fas fa-arrow-left"></i> Back to Manage Catalogs</a>
+        <a href="https://bidzwon.com/dev/catalogs/manage.php" class="no_margin mb-30 bidzbutton orange create_button"><i class="fas fa-arrow-left"></i> Back to Manage Catalogs</a>
     </div>
 
     <?php if($feat_num == 0) : ?>

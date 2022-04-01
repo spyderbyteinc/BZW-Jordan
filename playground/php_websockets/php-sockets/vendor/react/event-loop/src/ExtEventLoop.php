@@ -44,7 +44,7 @@ final class ExtEventLoop implements LoopInterface
 
         // support arbitrary file descriptors and not just sockets
         // Windows only has limited file descriptor support, so do not require this (will fail otherwise)
-        // @link http://www.wangafu.net/~nickm/libevent-book/Ref2_eventbase.html#_setting_up_a_complicated_event_base
+        // @link https://www.wangafu.net/~nickm/libevent-book/Ref2_eventbase.html#_setting_up_a_complicated_event_base
         $config = new \EventConfig();
         if (\DIRECTORY_SEPARATOR !== '\\') {
             $config->requireFeatures(\EventConfig::FEATURE_FDS);

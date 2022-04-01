@@ -30,7 +30,7 @@ CHANGELOG
   * Added heartbeat support via ping/pong in WsServer
   * BC: No longer support old (and insecure) Hixie76 and Hybi protocols
   * BC: No longer support disabling UTF-8 checks
-  * BC: The Session component implements HttpServerInterface instead of WsServerInterface
+  * BC: The Session component implements httperverInterface instead of WsServerInterface
   * BC: PHP 5.3 no longer supported
   * BC: Update to newer version of react/socket dependency
   * BC: WAMP topics reduced to 0 subscriptions are deleted, new subs to same name will result in new Topic instance
@@ -76,7 +76,7 @@ CHANGELOG
   * Added the `App` class to help making Ratchet so easy to use it's silly
   * BC: Require hostname to do HTTP Host header match and do Origin HTTP header check, verify same name by default, helping prevent CSRF attacks
   * Added Symfony/2.2 based HTTP Router component to allowing for a single Ratchet server to handle multiple apps -> Ratchet\Http\Router
-  * BC: Decoupled HTTP from WebSocket component -> Ratchet\Http\HttpServer
+  * BC: Decoupled HTTP from WebSocket component -> Ratchet\Http\httperver
   * BF: Single sub-protocol selection to conform with RFC6455
   * BF: Sanity checks on WAMP protocol to prevent errors
 

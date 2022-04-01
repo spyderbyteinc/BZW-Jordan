@@ -58,7 +58,7 @@ class ServerProtocolTest extends \PHPUnit_Framework_TestCase {
     }
 
     public function testSubscribe() {
-        $uri = 'http://example.com';
+        $uri = 'https://example.com';
         $clientMessage = array(5, $uri);
 
         $conn = $this->newConn();
@@ -70,7 +70,7 @@ class ServerProtocolTest extends \PHPUnit_Framework_TestCase {
     }
 
     public function testUnSubscribe() {
-        $uri = 'http://example.com/endpoint';
+        $uri = 'https://example.com/endpoint';
         $clientMessage = array(6, $uri);
 
         $conn = $this->newConn();
@@ -101,7 +101,7 @@ class ServerProtocolTest extends \PHPUnit_Framework_TestCase {
         $args     = func_get_args();
         $paramNum = array_shift($args);
 
-        $uri = 'http://example.com/endpoint/' . rand(1, 100);
+        $uri = 'https://example.com/endpoint/' . rand(1, 100);
         $id  = uniqid('', false);
         $clientMessage = array_merge(array(2, $id, $uri), $args);
 
@@ -157,7 +157,7 @@ class ServerProtocolTest extends \PHPUnit_Framework_TestCase {
 
     public function eventProvider() {
         return array(
-            array('http://example.com', array('one', 'two'))
+            array('https://example.com', array('one', 'two'))
           , array('curie', array(array('hello' => 'world', 'herp' => 'derp')))
         );
     }
@@ -212,7 +212,7 @@ class ServerProtocolTest extends \PHPUnit_Framework_TestCase {
         $this->_comp->onOpen($conn);
 
         $prefix  = 'incoming';
-        $fullURI   = "http://example.com/$prefix";
+        $fullURI   = "https://example.com/$prefix";
         $method = 'call';
 
         $this->_comp->onMessage($conn, json_encode(array(1, $prefix, $fullURI)));

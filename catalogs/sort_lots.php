@@ -212,7 +212,7 @@
         }
 
 
-        // <img src="http://bidzwon.com/dev/lots/pictures/no_image.png" alt="Lot Picture" class="lot_image_primary">
+        // <img src="https://bidzwon.com/dev/lots/pictures/no_image.png" alt="Lot Picture" class="lot_image_primary">
         if($no_pic == 1){
             $pic_comps = explode("||", $pic_val);
             $picture_id = $pic_comps[1];

@@ -1,7 +1,7 @@
 <?php
 namespace Ratchet\Session;
 use Ratchet\ConnectionInterface;
-use Ratchet\Http\HttpServerInterface;
+use Ratchet\Http\httperverInterface;
 use Psr\Http\Message\RequestInterface;
 use Ratchet\Session\Storage\VirtualSessionStorage;
 use Ratchet\Session\Serialize\HandlerInterface;
@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\Session\Storage\Handler\NullSessionHandler;
  * Your website must also use Symfony HttpFoundation Sessions to read your sites session data
  * If your are not using at least PHP 5.4 you must include a SessionHandlerInterface stub (is included in Symfony HttpFoundation, loaded w/ composer)
  */
-class SessionProvider implements HttpServerInterface {
+class SessionProvider implements httperverInterface {
     /**
      * @var \Ratchet\MessageComponentInterface
      */
@@ -38,13 +38,13 @@ class SessionProvider implements HttpServerInterface {
     protected $_serializer;
 
     /**
-     * @param \Ratchet\Http\HttpServerInterface           $app
+     * @param \Ratchet\Http\httperverInterface           $app
      * @param \SessionHandlerInterface                    $handler
      * @param array                                       $options
      * @param \Ratchet\Session\Serialize\HandlerInterface $serializer
      * @throws \RuntimeException
      */
-    public function __construct(HttpServerInterface $app, \SessionHandlerInterface $handler, array $options = array(), HandlerInterface $serializer = null) {
+    public function __construct(httperverInterface $app, \SessionHandlerInterface $handler, array $options = array(), HandlerInterface $serializer = null) {
         $this->_app     = $app;
         $this->_handler = $handler;
         $this->_null    = new NullSessionHandler;

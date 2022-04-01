@@ -5,7 +5,7 @@ Author: T.Morimoto
 
 Copyright 2017, T.Morimoto
 * Free to use and abuse under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
+* https://www.opensource.org/licenses/mit-license.php
 
 https://github.com/woodroots/infiniteslidev2
 */

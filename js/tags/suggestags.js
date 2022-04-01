@@ -1,7 +1,7 @@
 /**
  * Amsify Suggestags
  * https://github.com/amsify42/jquery.amsify.suggestags
- * http://www.amsify42.com
+ * https://www.amsify42.com
  */
 
 var AmsifySuggestags;

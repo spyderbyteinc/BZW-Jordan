@@ -17,7 +17,7 @@ use SplObjectStorage;
  *
  * This loop is known to work with PHP 5.4 through PHP 7+.
  *
- * @see http://php.net/manual/en/book.ev.php
+ * @see https://php.net/manual/en/book.ev.php
  * @see https://bitbucket.org/osmanov/pecl-ev/overview
  */
 class ExtEvLoop implements LoopInterface

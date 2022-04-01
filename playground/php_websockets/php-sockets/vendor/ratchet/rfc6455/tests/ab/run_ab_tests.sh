@@ -52,7 +52,7 @@ if [ "$ABTEST" = "server" ]; then
   sleep 1
 
   # send the shutdown command to the PHP echo server
-  wget -O - -q http://127.0.0.1:9001/shutdown
+  wget -O - -q https://127.0.0.1:9001/shutdown
 fi
 
 
