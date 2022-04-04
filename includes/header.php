@@ -344,4 +344,4 @@
             </div>
         <?php endif ; ?>
     </header>
-<script src="<?php echo $root; ?>js/validators/login.js"></script> -->
+<script src="<?php echo $root; ?>js/validators/login.js"></script>
