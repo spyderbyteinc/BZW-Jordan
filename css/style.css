@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body {
+  height: 100%;
+}
 .dilute{
   opacity: .5;
 }
@@ -6012,4 +6015,157 @@ h4.seller_dashboard_module_heading span{
 #inspection_and_removal .ins_rem_notes .ins_rem_output{
   margin-top: 10px;
   padding-left: 20px;
+}
+
+section.message_center{
+  width: 1200px;
+  margin: auto;
+  background-color: whitesmoke;
+  height: 70%;
+}
+section.message_center h2.section_heading{
+  width: 100%;
+  text-align: center;
+  border-bottom: 3px solid #666;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section.message_center h2.section_heading span{
+  background: whitesmoke;
+  padding: 0 10px;
+  font-size: 26px;
+  color: chocolate;
+}
+section.message_center #container{
+  height: 100%;
+  border: 2px solid lightgrey;
+}
+section.message_center #container #message_container{
+  display: flex;
+  height: 100%;
+}
+section.message_center #container #message_container #message_container_left{
+  width: 33.3%;
+  height: 100%;
+}
+section.message_center #container #message_container #seperation_line{
+  width: .3%;
+  background-color: grey;
+  height: 100%;
+}
+section.message_center #container #message_container #message_container_right{
+  width: 66.3%;
+  height: 100%;
+}
+section.message_center #container #message_container #message_container_left #contact_topper{
+  margin-top: 15px;
+  border-bottom: 2px solid chocolate;
+  height: 15%;
+}
+section.message_center #container #message_container #message_container_left #contact_topper h4.contact_heading{
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section.message_center #container #message_container #message_container_left #contact_topper h4.contact_heading span{
+  background: whitesmoke;
+  padding: 0 10px;
+  color: #666;
+  font-size: 28px;
+}
+section.message_center #container #message_container #message_container_left #contact_topper #contact_search_container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+section.message_center #container #message_container #message_container_left #contact_topper #contact_search_container input#search_conversations{
+  line-height: 40px;
+  background: #eee;
+  box-shadow: inset 0px 1px 3px 0px rgb(0 0 0 / 8%);
+  border-radius: 5px;
+  padding: 0px 20px 0px 20px;
+  font-size: 1rem;
+  color: black;
+  outline: none;
+  margin: 0;
+  border: 1px solid chocolate;
+  width: 90%;
+  text-indent: 25px;
+}
+.search_bar i {
+  position: absolute;
+}
+
+.search_bar {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.search_bar .icon {
+  padding: 10px;
+  color: darkgrey;
+  min-width: 50px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.search_bar .input-field {
+  width: 100%;
+  padding: 10px;
+}
+section.message_center #container #message_container #message_container_left #contact_list{
+  height: 80%;
+  overflow: auto;
+  max-height: 615px;
+}
+section.message_center #container #message_container #message_container_left #contact_list .contact_item {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid chocolate;
+}
+section.message_center #container #message_container #message_container_left #contact_list .contact_item .contact_holder {
+  display: flex;
+  justify-content: start;
+  height: 100%;
+}
+section.message_center #container #message_container #message_container_left #contact_list .contact_item .contact_holder .contact_photo {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.message_center #container #message_container #message_container_left #contact_list .contact_item .contact_holder .contact_photo .image_holder{
+  display: flex;
+  justify-content: center;
+}
+section.message_center #container #message_container #message_container_left #contact_list .contact_item .contact_holder .contact_photo img{
+  width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+section.message_center #container #message_container #message_container_left #contact_list .contact_item .contact_holder .message_information{
+  width: 65%;
+}
+section.message_center #container #message_container #message_container_left #contact_list .contact_item .message_information .contact_name{
+  text-align: center;
+  font-size: 22px;
+  margin-top: 15px;
+}
+section.message_center #container #message_container #message_container_left #contact_list .contact_item .message_information .message_content{
+
+}
+.wrapper {
+  padding: 10px;
+  max-width: 100%;
+}
+  
+.wrapper .message_content {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
